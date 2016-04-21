@@ -97,6 +97,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
             mImageView.setImageBitmap(selectedImage);
             mUri = imageUri;
+            Intent intent = new Intent(this, SetGeoActivity.class);
+            intent.putExtra("image", mUri);
+            startActivity(intent);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
