@@ -13,13 +13,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class DictActivity extends AppCompatActivity implements View.OnClickListener {
 
     final String LOG_TAG = "myLogs";
 
     Button btnAdd, btnRead, btnClear;
     EditText etWord, etTrans;
-    TextView txvGerResult, txvRusResult;
+    TextView txvGerResult, txvRusResult, txvArticle;
 
     DBHelper dbHelper;
 
@@ -38,6 +41,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         txvGerResult = (TextView) findViewById(R.id.txv_ger_result);
         txvRusResult = (TextView) findViewById(R.id.txv_rus_result);
+        txvArticle = (TextView) findViewById(R.id.txv_article);
 
         // создаем объект для создания и управления версиями БД
         dbHelper = new DBHelper(this);
@@ -81,53 +85,43 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
                 selectionArgs = String.valueOf(rowID);
                 c = db.query("mydict", null, selection, new String[]{selectionArgs}, null, null,
                         null);
-
                 break;
-//            case R.id.btnRead:
-//                Log.d(LOG_TAG, "--- Rows in mydict: ---");
-//                // делаем запрос всех данных из таблицы mydict, получаем Cursor
-//                Cursor c = db.query("mydict", null, null, null, null, null, null);
-//
-//                // ставим позицию курсора на первую строку выборки
-//                // если в выборке нет строк, вернется false
-//                if (c.moveToFirst()) {
-//
-//                    // определяем номера столбцов по имени в выборке
-//                    int idColIndex = c.getColumnIndex("id");
-//                    int wordColIndex = c.getColumnIndex("word");
-//                    int TransColIndex = c.getColumnIndex("trans");
-//
-//                    do {
-//                        // получаем значения по номерам столбцов и пишем все в лог
-//                        Log.d(LOG_TAG,
-//                                "ID = " + c.getInt(idColIndex) +
-//                                        ", word = " + c.getString(wordColIndex) +
-//                                        ", trans = " + c.getString(TransColIndex));
-//                        // переход на следующую строку
-//                        // а если следующей нет (текущая - последняя), то false - выходим из цикла
-//                    } while (c.moveToNext());
-//                } else
-//                    Log.d(LOG_TAG, "0 rows");
-//                c.close();
-//                break;
-//            case R.id.btnClear:
-//                Log.d(LOG_TAG, "--- Clear mydict: ---");
-//                // удаляем все записи
-//                int clearCount = db.delete("mydict", null, null);
-//                Log.d(LOG_TAG, "deleted rows count = " + clearCount);
-//                break;
         }
 
         if (c != null) {
             if (c.moveToFirst()) {
                 String str;
                 // GER
+                str = c.getString(c.getColumnIndex("word"));
+
+                Pattern pattern = Pattern.compile("(der|die|das)(.+)");
+                Matcher matcher = pattern.matcher(str);
+                if (matcher.find())
+                {
+                    switch (matcher.group(1)) {
+                        case "der":
+                            txvArticle.setText(matcher.group(1));
+                            txvArticle.setTextColor(getResources().getColor(R.color.colorArticleDer));
+                            break;
+                        case "die":
+                            txvArticle.setText(matcher.group(1));
+                            txvArticle.setTextColor(getResources().getColor(R.color.colorArticleDie));
+                            break;
+                        case "das":
+                            txvArticle.setText(matcher.group(1));
+                            txvArticle.setTextColor(getResources().getColor(R.color.colorArticleDas));
+                            break;
+                    }
+
+                }
+
+                txvGerResult.setText(str);
                 txvGerResult.setEnabled(true);
-                txvGerResult.setText(c.getString(c.getColumnIndex("word")));
 
                 // RUS
-                txvRusResult.setEnabled(true);
                 txvRusResult.setText(c.getString(c.getColumnIndex("trans")));
+                txvRusResult.setEnabled(true);
+
 
                 //Clear Edit + set focus
                 etWord.setText("");

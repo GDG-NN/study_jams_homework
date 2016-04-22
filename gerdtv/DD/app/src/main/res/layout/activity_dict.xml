@@ -74,6 +74,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textSize="30sp"
+            android:enabled="false"
+            android:textColor="@color/colorLabel"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txv_article" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:textSize="25sp"
             android:enabled="false"
             android:textColor="@color/colorLabel"
@@ -89,6 +99,7 @@
             android:enabled="false"
             android:layout_marginTop="20dp"
             android:id="@+id/txv_rus_result" />
+
     </LinearLayout>
 
 </LinearLayout>

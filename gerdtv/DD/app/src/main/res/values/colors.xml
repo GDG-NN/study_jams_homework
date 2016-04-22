@@ -6,4 +6,7 @@
     <color name="colorTextBtn">#ffffff</color>
     <color name="colorBgdBtn">#33b5e5</color>
     <color name="colorLabel">#303030</color>
+    <color name="colorArticleDer">#00ddff</color>
+    <color name="colorArticleDie">#ff1100</color>
+    <color name="colorArticleDas">#44be20</color>
 </resources>
