@@ -15,7 +15,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="20sp"
-            android:text="@string/txv_word">
+            android:text="@string/txv_word"
+            android:id="@+id/label_world">
         </TextView>
 
         <EditText
@@ -46,28 +47,44 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/buttons_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add">
         </Button>
-        <Button
-            android:id="@+id/btnRead"
-            android:layout_width="wrap_content"
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_container"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Read">
-        </Button>
-        <Button
-            android:id="@+id/btnClear"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txv_ger_result" />
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Clear">
-        </Button>
+            android:gravity="center"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:layout_marginTop="15dp"
+            android:width="1dp"
+            android:id="@+id/txv_rus_result" />
     </LinearLayout>
 
 </LinearLayout>
