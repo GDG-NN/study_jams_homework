@@ -99,6 +99,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
                 if (matcher.find())
                 {
                     art = matcher.group(1);
+                    str = str.replace(art, "");
                     switch (art) {
                         case "der":
                             txvArticle.setText(art);
