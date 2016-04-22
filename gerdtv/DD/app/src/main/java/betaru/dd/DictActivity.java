@@ -90,25 +90,26 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         if (c != null) {
             if (c.moveToFirst()) {
-                String str;
+                String str, art;
                 // GER
                 str = c.getString(c.getColumnIndex("word"));
 
-                Pattern pattern = Pattern.compile("(der|die|das)(.+)");
+                Pattern pattern = Pattern.compile("^(der|die|das)(.+)");
                 Matcher matcher = pattern.matcher(str);
                 if (matcher.find())
                 {
-                    switch (matcher.group(1)) {
+                    art = matcher.group(1);
+                    switch (art) {
                         case "der":
-                            txvArticle.setText(matcher.group(1));
+                            txvArticle.setText(art);
                             txvArticle.setTextColor(getResources().getColor(R.color.colorArticleDer));
                             break;
                         case "die":
-                            txvArticle.setText(matcher.group(1));
+                            txvArticle.setText(art);
                             txvArticle.setTextColor(getResources().getColor(R.color.colorArticleDie));
                             break;
                         case "das":
-                            txvArticle.setText(matcher.group(1));
+                            txvArticle.setText(art);
                             txvArticle.setTextColor(getResources().getColor(R.color.colorArticleDas));
                             break;
                     }
