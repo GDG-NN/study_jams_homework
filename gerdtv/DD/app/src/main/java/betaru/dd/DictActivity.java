@@ -116,6 +116,11 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
                     }
 
                 }
+                else
+                {
+                    txvArticle.setText("");
+                    txvArticle.setEnabled(false);
+                }
 
                 txvGerResult.setText(str);
                 txvGerResult.setEnabled(true);
