@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorTextBtn">#ffffff</color>
     <color name="colorBgdBtn">#33b5e5</color>
+    <color name="colorLabel">#303030</color>
 </resources>
