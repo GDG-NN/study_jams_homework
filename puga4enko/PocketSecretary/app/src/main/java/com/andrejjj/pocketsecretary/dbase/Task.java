@@ -18,14 +18,14 @@ package com.andrejjj.pocketsecretary.dbase;
  */
 public class Task {
     private int id;
-    private String Name;
+    private String name;
 
     public Task() {
         this(null);
     }
 
     public Task(String Name) {
-        this.Name = Name;
+        this.name = Name;
     }
 
     public int getId() {
@@ -37,10 +37,10 @@ public class Task {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
 }

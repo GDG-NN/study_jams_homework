@@ -1,11 +1,10 @@
 package com.andrejjj.pocketsecretary.dbase;
 
+import java.util.HashSet;
+
 /**
  * Created by Andrejjj on 23.04.2016.
  */
-
-import java.util.HashSet;
-
 /**
  * @author Andrey S. Pugachenko
  * @version 0.0.1
