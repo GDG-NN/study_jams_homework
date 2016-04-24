@@ -1,7 +1,9 @@
-package com.andrejjj.pocketsecretary;
+package com.andrejjj.pocketsecretary.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.andrejjj.pocketsecretary.R;
 
 public class DayEvents extends AppCompatActivity {
 

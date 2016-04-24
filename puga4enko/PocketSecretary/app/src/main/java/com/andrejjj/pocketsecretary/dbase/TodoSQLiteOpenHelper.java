@@ -4,8 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import java.util.HashSet;
-
 /**
  * Created by Andrejjj on 23.04.2016.
  */
