@@ -72,6 +72,9 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.btnAdd:
+
+
+
                 Log.d(LOG_TAG, "--- Insert in mydict: ---");
                 // подготовим данные для вставки в виде пар: наименование столбца - значение
 
