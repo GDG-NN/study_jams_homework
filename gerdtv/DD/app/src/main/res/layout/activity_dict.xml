@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBgdBtn"
             android:textColor="@color/colorTextBtn"
-            android:text="Add">
+            android:text="@string/btn_add">
         </Button>
 
     </LinearLayout>

@@ -5,6 +5,7 @@
     <string name="emsg_edit_inv_char"> contains an invalid character!</string>
     <string name="txv_trans">Translation</string>
     <string name="btn_add_word">Add words</string>
+    <string name="btn_add">Add</string>
     <string name="txv_words_added">Words added</string>
     <string name="txv_word_add_counter">0</string>
     <string name="txv_words_studied">Words studied</string>
