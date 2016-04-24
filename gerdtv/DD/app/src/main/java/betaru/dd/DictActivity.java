@@ -55,6 +55,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
         String[] columns = null;
         String selection = null;
         String selectionArgs = null;
+        String chStatus;
 
         // создаем объект для данных
         ContentValues cv = new ContentValues();
@@ -64,19 +65,20 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         // получаем данные из полей ввода
         String word = etWord.getText().toString();
-
-        String chStatus = validateText(word);
+        chStatus = validateText(word);
 
         if ( chStatus != null) {
             etWord.setError(getResources().getString(R.string.txv_word) + " " + chStatus);
+            return;
         }
 
-        String trans = etTrans.getText().toString();
 
+        String trans = etTrans.getText().toString();
         chStatus = validateText(trans);
 
         if ( chStatus != null) {
             etTrans.setError(getResources().getString(R.string.txv_trans) + " " + chStatus);
+            return;
         }
 
 
@@ -86,7 +88,6 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.btnAdd:
-
 
 
                 Log.d(LOG_TAG, "--- Insert in mydict: ---");
@@ -191,10 +192,13 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private String validateText(String text) {
+    private String validateText(String str) {
         String errMsg = null;
-        if (text.length() == 0)
-             errMsg = getResources().getString(R.string.emsg_edit_text_req);
+        if (str.length() == 0)
+             errMsg = getResources().getString(R.string.emsg_edit_required);
+        else if (!str.matches("^[a-zA-Z]+$")) {
+            errMsg = getResources().getString(R.string.emsg_edit_inv_char);
+        }
 
         return errMsg;
     }

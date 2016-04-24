@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">DD</string>
     <string name="txv_word">Word</string>
-    <string name="emsg_edit_text_req"> is required!</string>
+    <string name="emsg_edit_required"> is required!</string>
+    <string name="emsg_edit_inv_char"> contains an invalid character!</string>
     <string name="txv_trans">Translation</string>
     <string name="btn_add_word">Add words</string>
     <string name="txv_words_added">Words added</string>
