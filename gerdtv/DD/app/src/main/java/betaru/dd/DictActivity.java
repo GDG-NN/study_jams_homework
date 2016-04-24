@@ -64,7 +64,14 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         // получаем данные из полей ввода
         String word = etWord.getText().toString();
+
+        if (word.length() == 0)
+            etWord.setError("Word is required");
+
         String trans = etTrans.getText().toString();
+
+        if (trans.length() == 0)
+            etTrans.setError("Trans is required");
 
         // подключаемся к БД
         SQLiteDatabase db = dbHelper.getWritableDatabase();

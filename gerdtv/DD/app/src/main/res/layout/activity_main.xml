@@ -3,27 +3,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     tools:context="betaru.dd.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorLabel"
+            android:layout_margin="5dp"
+            android:text="@string/txv_words_added"
+            android:id="@+id/txv_words_added" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorLabel"
+            android:layout_margin="5dp"
+            android:text="@string/txv_word_add_counter"
+            android:id="@+id/txv_word_add_counter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorLabel"
+            android:layout_margin="5dp"
+            android:text="@string/txv_words_studied"
+            android:id="@+id/txv_words_studied" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorLabel"
+            android:layout_margin="5dp"
+            android:text="@string/txv_word_std_counter"
+            android:id="@+id/txv_word_std_counter" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
         >
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_word"
+            android:id="@+id/addWordsButton"
+            android:textColor="@color/colorTextBtn"
+            android:background="@color/colorBgdBtn"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:onClick="openDict"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_word"
+            android:id="@+id/stdWordsButton"
+            android:textColor="@color/colorTextBtn"
+            android:background="@color/colorBgdBtn"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:onClick="openLes"/>
     </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_add_word"
-        android:id="@+id/addWordsButton"
-        android:textColor="@color/colorTextBtn"
-        android:background="@color/colorBgdBtn"
-        android:layout_margin="20dp"
-        android:padding="10dp"
-        android:onClick="openDict"/>
 
 </RelativeLayout>
