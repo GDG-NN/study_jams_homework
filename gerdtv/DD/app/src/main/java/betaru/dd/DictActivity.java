@@ -65,13 +65,20 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
         // получаем данные из полей ввода
         String word = etWord.getText().toString();
 
-        if (word.length() == 0)
-            etWord.setError("Word is required");
+        String chStatus = validateText(word);
+
+        if ( chStatus != null) {
+            etWord.setError(getResources().getString(R.string.txv_word) + " " + chStatus);
+        }
 
         String trans = etTrans.getText().toString();
 
-        if (trans.length() == 0)
-            etTrans.setError("Trans is required");
+        chStatus = validateText(trans);
+
+        if ( chStatus != null) {
+            etTrans.setError(getResources().getString(R.string.txv_trans) + " " + chStatus);
+        }
+
 
         // подключаемся к БД
         SQLiteDatabase db = dbHelper.getWritableDatabase();
@@ -182,6 +189,14 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
         }
+    }
+
+    private String validateText(String text) {
+        String errMsg = null;
+        if (text.length() == 0)
+             errMsg = getResources().getString(R.string.emsg_edit_text_req);
+
+        return errMsg;
     }
 
 }
