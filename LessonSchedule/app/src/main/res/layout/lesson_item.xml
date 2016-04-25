@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/item_vertical_margin"
+        android:paddingBottom="@dimen/item_vertical_margin"
+        android:paddingStart="@dimen/item_horizontal_margin"
+        android:paddingEnd="@dimen/item_horizontal_margin">
+        <TextView
+            android:id="@+id/lesson_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Lesson name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:paddingBottom="4dp"/>
+        <TextView
+            android:id="@+id/lesson_additional_info"
+            android:layout_below="@id/lesson_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Lesson additional info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingBottom="4dp"/>
+        <TextView
+            android:id="@+id/lesson_classroom"
+            android:layout_below="@id/lesson_additional_info"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Lesson classroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingBottom="4dp"/>
+        <TextView
+            android:id="@+id/lesson_time"
+            android:layout_below="@id/lesson_classroom"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Lesson time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+</FrameLayout>
