@@ -6,15 +6,18 @@ import android.support.v7.app.AppCompatActivity;
 import com.andrejjj.pocketsecretary.R;
 
 /**
+ * Created by Andrejjj on 25.04.2016.
+ */
+
+/**
  * @author Andrey S. Pugachenko
  * @version 0.0.1
- *          This is an Activity for day events
+ *          This is an Activity for adding event
  */
-public class DayEvents extends AppCompatActivity {
-
+public class Analytics extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.day_events);
+        setContentView(R.layout.analytics);
     }
 }
