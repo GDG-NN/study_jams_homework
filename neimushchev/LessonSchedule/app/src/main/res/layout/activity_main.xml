@@ -5,8 +5,7 @@
     android:id="@+id/main_coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.oink.lessonschedule.MainActivity">
-
+    tools:context=".activities.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_container"
@@ -21,39 +20,42 @@
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             app:contentScrim="@color/colorPrimary"
             app:expandedTitleGravity="top"
-            app:expandedTitleMarginStart="48dp"
-            app:expandedTitleMarginEnd="48dp"
-            app:expandedTitleMarginTop="0dp"
-            app:expandedTitleMarginBottom="0dp"
+            app:expandedTitleMarginStart="@dimen/ctl_margin_left"
+            app:expandedTitleMarginEnd="@dimen/ctl_margin_right"
+            app:expandedTitleMarginTop="@dimen/ctl_margin_top"
+            app:expandedTitleMarginBottom="@dimen/ctl_margin_bottom"
             >
-            <LinearLayout
-                android:id="@+id/current_lesson_layout"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingTop="120dp"
-                android:paddingBottom="32dp"
-                android:paddingLeft="32dp"
-                android:paddingRight="32dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                >
-                <TextView
-                    android:id="@+id/lesson_label"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/ctl_layout_padding_top"
+                android:paddingBottom="@dimen/ctl_layout_padding_bottom"
+                android:paddingStart="@dimen/ctl_layout_padding_left"
+                android:paddingEnd="@dimen/ctl_layout_padding_right">
+                <LinearLayout
+                    android:id="@+id/current_lesson_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/item_horizontal_margin"
-                    android:paddingEnd="@dimen/item_horizontal_margin"
-                    android:text="Текущее занятие:"/>
-                <include layout="@layout/lesson_item"/>
-            </LinearLayout>
-
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/lesson_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/item_horizontal_margin"
+                        android:paddingEnd="@dimen/item_horizontal_margin"
+                        android:text="@string/main_lesson_placeholder"/>
+                    <include layout="@layout/lesson_item"/>
+                </LinearLayout>
+            </FrameLayout>
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
                 android:layout_width="match_parent"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"/>
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 

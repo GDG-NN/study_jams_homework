@@ -1,4 +1,4 @@
-package com.oink.lessonschedule;
+package com.oink.lessonschedule.activities;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -8,9 +8,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+
+import com.oink.lessonschedule.R;
+import com.oink.lessonschedule.fragments.ScheduleFragment;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,7 +34,7 @@ public class SelectedDayActivity extends AppCompatActivity {
 
         try {
             jsonDayObject = new JSONObject(intent.getStringExtra("jsonDay"));
-            toolbar.setTitle(jsonDayObject.getString("name"));
+            toolbar.setTitle(jsonDayObject.getString(getString(R.string.json_day_name)));
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -60,15 +61,15 @@ public class SelectedDayActivity extends AppCompatActivity {
         Fragment oddFragment = new ScheduleFragment();
 
         Bundle evenBundle = new Bundle();
-        evenBundle.putString("json", jsonDayObject.getJSONArray("lessonsEven").toString());
+        evenBundle.putString("json", jsonDayObject.getJSONArray(getString(R.string.json_lesson_even)).toString());
         evenFragment.setArguments(evenBundle);
 
         Bundle oddBundle = new Bundle();
-        oddBundle.putString("json", jsonDayObject.getJSONArray("lessonsOdd").toString());
+        oddBundle.putString("json", jsonDayObject.getJSONArray(getString(R.string.json_lesson_odd)).toString());
         oddFragment.setArguments(oddBundle);
 
-        adapter.addFragment(evenFragment, "Четная");
-        adapter.addFragment(oddFragment, "Нечетная");
+        adapter.addFragment(evenFragment, getString(R.string.even));
+        adapter.addFragment(oddFragment, getString(R.string.odd));
         viewPager.setAdapter(adapter);
     }
 

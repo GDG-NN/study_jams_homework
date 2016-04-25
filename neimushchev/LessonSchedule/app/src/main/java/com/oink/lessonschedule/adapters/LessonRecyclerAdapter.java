@@ -1,16 +1,15 @@
-package com.oink.lessonschedule;
+package com.oink.lessonschedule.adapters;
 
-import android.app.Activity;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.oink.lessonschedule.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,6 +21,7 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
 
     private String[] firstBuildingTime;
     private String[] sixthBuildingTime;
+    private Resources resources;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView lessonClassroom;
@@ -40,6 +40,7 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
 
     public LessonRecyclerAdapter(JSONArray jsonArray, Resources resources) {
         this.jsonArray = jsonArray;
+        this.resources = resources;
         firstBuildingTime = resources.getStringArray(R.array.first_building_time);
         sixthBuildingTime = resources.getStringArray(R.array.sixth_building_time);
     }
@@ -68,22 +69,22 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
     public void onBindViewHolder(ViewHolder holder, int position) {
         try {
             JSONObject lessonObject = jsonArray.getJSONObject(position);
-            holder.lessonAdditionalInfo.setText(lessonObject.getString("additionalInfo"));
-            holder.lessonClassroom.setText(lessonObject.getString("classroom"));
-            holder.lessonName.setText(lessonObject.getString("name"));
+            holder.lessonAdditionalInfo.setText(lessonObject.getString(resources.getString(R.string.json_lesson_additional_info)));
+            holder.lessonClassroom.setText(lessonObject.getString(resources.getString(R.string.json_lesson_classroom)));
+            holder.lessonName.setText(lessonObject.getString(resources.getString(R.string.json_lesson_name)));
 
-            if (lessonObject.getString("additionalInfo").equals("")) {
+            if (lessonObject.getString(resources.getString(R.string.json_lesson_additional_info)).equals("")) {
                 holder.lessonAdditionalInfo.setVisibility(View.GONE);
             }
-            if (lessonObject.getString("name").equals("")) {
+            if (lessonObject.getString(resources.getString(R.string.json_lesson_name)).equals("")) {
                 holder.lessonName.setVisibility(View.GONE);
             }
-            if (lessonObject.getString("classroom").equals("")) {
+            if (lessonObject.getString(resources.getString(R.string.json_lesson_classroom)).equals("")) {
                 holder.lessonClassroom.setVisibility(View.GONE);
             }
 
-            int lessonNumber = lessonObject.getInt("number");
-            boolean inSixthBuilding = lessonObject.getBoolean("inSixthBuilding");
+            int lessonNumber = lessonObject.getInt(resources.getString(R.string.json_lesson_number));
+            boolean inSixthBuilding = lessonObject.getBoolean(resources.getString(R.string.json_lesson_in_sixth_building));
             if (inSixthBuilding) {
                 holder.lessonTime.setText(sixthBuildingTime[lessonNumber - 1]);
             }

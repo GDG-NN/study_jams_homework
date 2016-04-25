@@ -13,36 +13,36 @@
         <TextView
             android:id="@+id/lesson_name"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Lesson name"
+            android:text="@string/lesson_name_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:paddingBottom="4dp"/>
+            android:textSize="@dimen/text_large"
+            android:paddingBottom="@dimen/lesson_item_label_padding_bottom"/>
         <TextView
             android:id="@+id/lesson_additional_info"
             android:layout_below="@id/lesson_name"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Lesson additional info"
+            android:text="@string/lesson_additional_info_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:paddingBottom="4dp"/>
+            android:textSize="@dimen/text_medium"
+            android:paddingBottom="@dimen/lesson_item_label_padding_bottom"/>
         <TextView
             android:id="@+id/lesson_classroom"
             android:layout_below="@id/lesson_additional_info"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Lesson classroom"
+            android:text="@string/lesson_classroom_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:paddingBottom="4dp"/>
+            android:textSize="@dimen/text_medium"
+            android:paddingBottom="@dimen/lesson_item_label_padding_bottom"/>
         <TextView
             android:id="@+id/lesson_time"
             android:layout_below="@id/lesson_classroom"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Lesson time"
+            android:text="@string/lesson_time_placeholder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"/>
+            android:textSize="@dimen/text_medium"/>
     </RelativeLayout>
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.oink.lessonschedule;
+package com.oink.lessonschedule.adapters;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.oink.lessonschedule.activities.MainActivity;
+import com.oink.lessonschedule.R;
+import com.oink.lessonschedule.activities.SelectedDayActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -63,7 +67,7 @@ public class DayRecyclerAdapter extends RecyclerView.Adapter<DayRecyclerAdapter.
     public void onBindViewHolder(ViewHolder holder, int position) {
         try {
             JSONObject lessonObject = jsonArray.getJSONObject(position);
-            holder.dayName.setText(lessonObject.getString("name"));
+            holder.dayName.setText(lessonObject.getString(mainActivity.getString(R.string.json_day_name)));
         } catch (JSONException e) {
             e.printStackTrace();
         }
