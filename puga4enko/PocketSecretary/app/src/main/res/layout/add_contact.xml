@@ -3,4 +3,130 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textSize="@dimen/label_text" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnClear"
+        android:layout_below="@+id/lblName" />
+
+    <TextView
+        android:id="@+id/lblAka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:text="@string/aka"
+        android:textSize="@dimen/label_text" />
+
+    <EditText
+        android:id="@+id/txtAka"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnClear"
+        android:layout_below="@+id/lblAka" />
+
+    <TextView
+        android:id="@+id/lblSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAka"
+        android:text="@string/surname"
+        android:textSize="@dimen/label_text" />
+
+    <EditText
+        android:id="@+id/txtSurname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnClear"
+        android:layout_below="@+id/lblSurname" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSurname"
+        android:text="@string/email"
+        android:textSize="@dimen/label_text" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblEmail"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/lblSkype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:text="@string/skype"
+        android:textSize="@dimen/label_text" />
+
+    <EditText
+        android:id="@+id/txtSkype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblSkype"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/lblPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSkype"
+        android:text="@string/phone"
+        android:textSize="@dimen/label_text" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblPhone"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/save"
+        android:textSize="@dimen/button_text" />
+
+    <Button
+        android:id="@+id/btnClear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/clear"
+        android:textSize="@dimen/button_text" />
+
+
 </RelativeLayout>

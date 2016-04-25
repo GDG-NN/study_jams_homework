@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Pocket Secretary</string>
+    <string name="options_error">Sorry, dude!!!\nI can\'t do it</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="aka">aka</string>
+    <string name="email">E-mail</string>
+    <string name="skype">Skype</string>
+    <string name="phone">Phone</string>
+    <string name="type">Type</string>
 </resources>
