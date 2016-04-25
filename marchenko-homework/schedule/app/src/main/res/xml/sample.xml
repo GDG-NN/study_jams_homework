@@ -1,4 +1,8 @@
- <samples>
+<?xml version="1.0" encoding="utf-8"?>
+
+<samples>
+    <tuesday>
+     day="Вторник"
      <sample
          subject="ВМиФА"
          teacher="Эгамов А.И."
@@ -10,11 +14,13 @@
          day="Вторник"
          time="11.20 - 12.50"/>
      <sample
-         subject="Параллельное программирование"
+         subject="Паралл. программ."
          teacher="Гергель В.П."
          day="Вторник"
          time="13.00 - 14.30"/>
-     <sample
+    </tuesday>
+     <thursday>
+ <sample
          subject="МЛиТА"
          teacher="Мокеев Д.Б."
          day="Четверг"
@@ -44,7 +50,9 @@
          teacher="Intel"
          day="Четверг"
          time="18.00 - 19.30"/>
-     <sample
+ </thursday>
+ <friday>
+ <sample
          subject="КСЕ"
          teacher="Губина Е.В."
          day="Пятница"
@@ -64,7 +72,9 @@
          teacher="Козинов Е.А."
          day="Пятница"
          time="16.20 - 18.00"/>
-     <sample
+ </friday>>
+ <saturday>
+ <sample
          subject="Физика"
          teacher="Панкратова Е.В."
          day="Суббота"
@@ -74,4 +84,5 @@
          teacher="Панкратова Е.В."
          day="Суббота"
          time="11.20 - 12.50"/>
-    </samples>
+ </saturday>
+</samples>
