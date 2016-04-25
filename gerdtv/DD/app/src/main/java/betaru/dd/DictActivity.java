@@ -65,7 +65,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         // получаем данные из полей ввода
         String word = etWord.getText().toString();
-        chStatus = validateText(word);
+        chStatus = validateText(word,"GE");
 
         if ( chStatus != null) {
             etWord.setError(getResources().getString(R.string.txv_word) + " " + chStatus);
@@ -74,7 +74,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
 
         String trans = etTrans.getText().toString();
-        chStatus = validateText(trans);
+        chStatus = validateText(trans, "RU");
 
         if ( chStatus != null) {
             etTrans.setError(getResources().getString(R.string.txv_trans) + " " + chStatus);
@@ -192,13 +192,27 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private String validateText(String str) {
+    private String validateText(String str, String langStr) {
         String errMsg = null;
+        // RU Regexp
+        String ruStrReg = "^[А-яЁё][-А-яЁё]+$";
+        // GE Regexp
+        String geStrReg = "^[a-zA-Z]+$";
+
         if (str.length() == 0)
              errMsg = getResources().getString(R.string.emsg_edit_required);
-        else if (!str.matches("^[a-zA-Z]+$")) {
-            errMsg = getResources().getString(R.string.emsg_edit_inv_char);
-        }
+//        else if (!str.matches(geStrReg) || !str.matches(ruStrReg)) {
+//            errMsg = getResources().getString(R.string.emsg_edit_inv_char);
+//        }
+
+        if (langStr == "RU")
+            if (!str.matches(ruStrReg)) {
+                errMsg = "must be in Russian!";
+            }
+        if (langStr == "GE")
+            if (!str.matches(geStrReg)) {
+                errMsg = "must be in German!";
+            }
 
         return errMsg;
     }

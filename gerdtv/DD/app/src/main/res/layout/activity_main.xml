@@ -76,7 +76,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_add_word"
+            android:text="@string/btn_lesson"
             android:id="@+id/stdWordsButton"
             android:textColor="@color/colorTextBtn"
             android:background="@color/colorBgdBtn"
