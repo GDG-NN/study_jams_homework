@@ -43,6 +43,7 @@
                         android:id="@+id/lesson_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/main_lesson_label_padding_top"
                         android:paddingStart="@dimen/item_horizontal_margin"
                         android:paddingEnd="@dimen/item_horizontal_margin"
                         android:text="@string/main_lesson_placeholder"/>
