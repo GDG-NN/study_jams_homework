@@ -7,8 +7,7 @@
         android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/name" />
 
     <EditText
         android:id="@+id/txtName"
@@ -24,8 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtName"
-        android:text="@string/aka"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/aka" />
 
     <EditText
         android:id="@+id/txtAka"
@@ -41,8 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtAka"
-        android:text="@string/surname"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/surname" />
 
     <EditText
         android:id="@+id/txtSurname"
@@ -58,8 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtSurname"
-        android:text="@string/email"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/email" />
 
     <EditText
         android:id="@+id/txtEmail"
@@ -76,8 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtEmail"
-        android:text="@string/skype"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/skype" />
 
     <EditText
         android:id="@+id/txtSkype"
@@ -94,8 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtSkype"
-        android:text="@string/phone"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/phone" />
 
     <EditText
         android:id="@+id/txtPhone"
@@ -109,17 +103,17 @@
 
     <Button
         android:id="@+id/btnSave"
+        style="@style/left_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save"
-        style="@style/left_button" />
+        android:text="@string/save" />
 
     <Button
         android:id="@+id/btnClear"
+        style="@style/right_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/clear"
-        style="@style/right_button"/>
+        android:text="@string/clear" />
 
 
 </RelativeLayout>

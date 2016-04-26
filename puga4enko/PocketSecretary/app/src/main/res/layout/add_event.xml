@@ -7,8 +7,7 @@
         android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/name" />
 
     <EditText
         android:id="@+id/txtName"
@@ -16,62 +15,97 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/lblName" />
+        android:layout_below="@+id/lblName"
+        android:inputType="text" />
 
     <TextView
         android:id="@+id/lblType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtName"
-        android:text="@string/type"
-        android:textSize="@dimen/label_text" />
+        android:text="@string/type" />
 
     <Spinner
-        android:id="@+id/expandableListView"
+        android:id="@+id/lstType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtName"
         android:layout_toEndOf="@+id/btnSave"
         android:layout_toRightOf="@+id/btnSave" />
 
-    <Button
-        android:id="@+id/btnSave"
+    <TextView
+        android:id="@+id/lblDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lstType"
+        android:text="@string/date" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lstType"
+        android:layout_toRightOf="@id/btnSave"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDate"
+        android:text="@string/time" />
+
+    <EditText
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDate"
+        android:layout_toRightOf="@id/btnSave"
+        android:ems="10"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTime"
+        android:text="@string/description" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTime"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="@string/save"
-        android:textSize="@dimen/button_text" />
+        android:layout_alignRight="@+id/txtTime"
+        android:layout_below="@+id/lblDescription"
+        android:ems="10"
+        android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/btnClear"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:text="@string/clear"
-        android:textSize="@dimen/button_text" />
-
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/btnClear"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/btnClear"
-        android:layout_below="@+id/expandableListView" />
-
-    <TimePicker
-        android:id="@+id/timePicker"
+        android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnSave"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/microphone" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/btnClear"
+        style="@style/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear" />
 
 
 </RelativeLayout>
