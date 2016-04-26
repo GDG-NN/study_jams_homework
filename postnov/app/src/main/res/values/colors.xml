@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#F44336</color>
+
+    <color name="colorButtonStateNormal">#00bcd4</color>
+    <color name="colorButtonStatePressed">#0097A7</color>
+
+    <color name="colorButtonSignStateNormal">#795548</color>
+    <color name="colorButtonSingStatePressed">#5D4037</color>
+
+    <color name="colorSelectedBG">#FFE0E0E0</color>
+    <color name="colorSecondaryText">#727272</color>
+</resources>

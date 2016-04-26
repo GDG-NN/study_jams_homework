@@ -1,0 +1,7 @@
+<resources>
+  <dimen name="margin_medium">16dp</dimen>
+  <dimen name="button_text_size">44sp</dimen>
+  <dimen name="result_text_size">34sp</dimen>
+  <dimen name="formula_text_size">26sp</dimen>
+  <dimen name="fab_margin">0dp</dimen>
+</resources>
