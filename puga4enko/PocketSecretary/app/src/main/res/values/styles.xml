@@ -8,4 +8,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="button_style">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:background">@drawable/button_normal</item>
+    </style>
+
+    <style name="left_button" parent="button_style">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_from_edge</item>
+    </style>
+
+    <style name="right_button" parent="button_style">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_from_edge</item>
+    </style>
+
 </resources>

@@ -8,4 +8,6 @@
     <dimen name="edit_text">20sp</dimen>
     <dimen name="person_width">150dp</dimen>
     <dimen name="person_height">220dp</dimen>
+    <dimen name="margin_from_edge">50dp</dimen>
+    <dimen name="button_padding">5dp</dimen>
 </resources>

@@ -111,22 +111,15 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:text="@string/save"
-        android:textSize="@dimen/button_text" />
+        style="@style/left_button" />
 
     <Button
         android:id="@+id/btnClear"
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:text="@string/clear"
-        android:textSize="@dimen/button_text" />
+        style="@style/right_button"/>
 
 
 </RelativeLayout>
