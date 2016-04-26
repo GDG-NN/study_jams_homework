@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simple calculator</string>
+    <string name="error_nan">Не является числом</string>
+    <string name="error_syntax">Неверное выражение</string>
+    <string name="error_infinity">На ноль делить нельзя</string>
+    <string name="button_clr_text">clr</string>
+    <string name="button_del_text">del</string>
+</resources>

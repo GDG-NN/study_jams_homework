@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="button_text_size">44sp</dimen>
+    <dimen name="result_text_size">44sp</dimen>
+    <dimen name="formula_text_size">34sp</dimen>
+</resources>

@@ -1,0 +1,319 @@
+{
+  "days": [
+    {
+      "name":"Понедельник",
+      "lessonsEven": [
+        {
+          "name": "Физкультура",
+          "number": 1,
+          "additionalInfo": "",
+          "classroom": "Спортзал 6 корпуса",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Метрология, стандартизация и сертификация",
+          "number": 2,
+          "additionalInfo": "Лекция",
+          "classroom": "6320",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Социология и политология",
+          "number": 3,
+          "additionalInfo": "Лекция",
+          "classroom": "6520",
+          "inSixthBuilding": true
+        }
+      ],
+      "lessonsOdd": [
+        {
+          "name": "Физкультура",
+          "number": 1,
+          "additionalInfo": "",
+          "classroom": "Спортзал 6 корпуса",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Метрология, стандартизация и сертификация",
+          "number": 2,
+          "additionalInfo": "Лекция",
+          "classroom": "6320",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Социология и политология",
+          "number": 3,
+          "additionalInfo": "Лекция",
+          "classroom": "6520",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Социология и политология",
+          "number": 4,
+          "additionalInfo": "Семинар",
+          "classroom": "6520",
+          "inSixthBuilding": true
+        }
+      ]
+    },
+    {
+      "name":"Вторник",
+      "lessonsEven": [
+        {
+          "name": "Английский язык",
+          "number": 3,
+          "additionalInfo": "Практика",
+          "classroom": "6505 / 6506",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Теория конечных автоматов",
+          "number": 4,
+          "additionalInfo": "Лекция",
+          "classroom": "6417",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Теория конечных автоматов",
+          "number": 5,
+          "additionalInfo": "Практика",
+          "classroom": "6417",
+          "inSixthBuilding": true
+        }
+      ],
+      "lessonsOdd": [
+        {
+          "name": "Английский язык",
+          "number": 3,
+          "additionalInfo": "Практика",
+          "classroom": "6505 / 6506",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Теория конечных автоматов",
+          "number": 4,
+          "additionalInfo": "Лекция",
+          "classroom": "6417",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Теория конечных автоматов",
+          "number": 5,
+          "additionalInfo": "Практика",
+          "classroom": "6417",
+          "inSixthBuilding": true
+        },
+        {
+          "name": "Язык программирования Java",
+          "number": 6,
+          "additionalInfo": "Лекция",
+          "classroom": "6417",
+          "inSixthBuilding": true
+        }
+      ]
+    },
+    {
+      "name":"Среда",
+      "lessonsEven": [
+        {
+          "name": "Физкультура",
+          "number": 1,
+          "additionalInfo": "",
+          "classroom": "Спортзал 4 корпуса",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Технологии программирования",
+          "number": 2,
+          "additionalInfo": "Лекция",
+          "classroom": "4408",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Язык программирования Java",
+          "number": 3,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4404",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Язык программирования Java",
+          "number": 4,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4404",
+          "inSixthBuilding": false
+        }
+      ],
+      "lessonsOdd": [
+        {
+          "name": "Физкультура",
+          "number": 1,
+          "additionalInfo": "",
+          "classroom": "Спортзал 4 корпуса",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Технологии программирования",
+          "number": 2,
+          "additionalInfo": "Лекция",
+          "classroom": "4408",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Электротехника",
+          "number": 3,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4308",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Электротехника",
+          "number": 4,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4308",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Технологии программирования",
+          "number": 5,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4403",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Технологии программирования",
+          "number": 6,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4403",
+          "inSixthBuilding": false
+        }
+      ]
+    },
+    {
+      "name":"Четверг",
+      "lessonsEven": [
+        {
+          "name": "Электротехника",
+          "number": 1,
+          "additionalInfo": "Лекция",
+          "classroom": "3301",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Физика",
+          "number": 2,
+          "additionalInfo": "Лекция",
+          "classroom": "5303",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Схемотехника",
+          "number": 3,
+          "additionalInfo": "Лекция",
+          "classroom": "3309",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Численные методы в АСОиУ",
+          "number": 4,
+          "additionalInfo": "Лекция",
+          "classroom": "4408",
+          "inSixthBuilding": false
+        }
+      ],
+      "lessonsOdd": [
+        {
+          "name": "Электротехника",
+          "number": 1,
+          "additionalInfo": "Лекция",
+          "classroom": "3301",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Физика",
+          "number": 2,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "5303",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Численные методы в АСОиУ",
+          "number": 4,
+          "additionalInfo": "Практика",
+          "classroom": "4408",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Численные методы в АСОиУ",
+          "number": 4,
+          "additionalInfo": "Лекция",
+          "classroom": "4408",
+          "inSixthBuilding": false
+        }
+      ]
+    },
+    {
+      "name":"Пятница",
+      "lessonsEven": [
+        {
+          "name": "Численные методы в АСОиУ",
+          "number": 1,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4403",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Численные методы в АСОиУ",
+          "number": 2,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4403",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Метрология, стандартизация и сертификация",
+          "number": 3,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4405",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Метрология, стандартизация и сертификация",
+          "number": 4,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4405",
+          "inSixthBuilding": false
+        }
+      ],
+      "lessonsOdd": [
+        {
+          "name": "Схемотехника",
+          "number": 1,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4403",
+          "inSixthBuilding": false
+        },
+        {
+          "name": "Схемотехника",
+          "number": 2,
+          "additionalInfo": "Лабораторные работы",
+          "classroom": "4403",
+          "inSixthBuilding": false
+        }
+      ]
+    },
+    {
+      "name":"Суббота",
+      "lessonsEven": [
+      ],
+      "lessonsOdd": [
+      ]
+    },
+    {
+      "name":"Воскресенье",
+      "lessonsEven": [
+      ],
+      "lessonsOdd": [
+      ]
+    }
+  ]
+}

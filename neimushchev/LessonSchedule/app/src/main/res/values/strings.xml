@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Lesson Schedule</string>
+    <string name="no_data_available">В этот день нет занятий</string>
+    <string name="main_no_lesson">Нет занятий</string>
+    <string name="loading_start">Загрузка началась</string>
+    <string name="loading_done">Загрузка завершена</string>
+    <string name="loading_err">Загрузка невозможна</string>
+    <string name="time_format">HH:mm</string>
+    <string name="current_lesson_label">Текущее занятие:</string>
+    <string name="next_lesson_label">Следующее занятие:</string>
+    <string name="schedule">Расписание</string>
+    <string name="json_day_name">name</string>
+    <string name="json_lesson_additional_info">additionalInfo</string>
+    <string name="json_lesson_classroom">classroom</string>
+    <string name="json_lesson_name">name</string>
+    <string name="json_lesson_number">number</string>
+    <string name="json_lesson_in_sixth_building">inSixthBuilding</string>
+    <string name="json_days">days</string>
+    <string name="json_lesson_even">lessonsEven</string>
+    <string name="json_lesson_odd">lessonsOdd</string>
+    <string name="even">Четная</string>
+    <string name="odd">Нечетная</string>
+    <string name="schedule_file_name">schedule.json</string>
+    <string name="update_server_url">https://www.dropbox.com/s/kcus5n4ebskhl28/schedule.json?dl=1</string>
+    <string name="main_lesson_placeholder">Текущее занятие:</string>
+    <string name="lesson_name_placeholder">Lesson name</string>
+    <string name="lesson_additional_info_placeholder">Lesson additional info</string>
+    <string name="lesson_classroom_placeholder">Lesson classroom</string>
+    <string name="lesson_time_placeholder">Lesson time</string>
+    <string-array name="first_building_time">
+        <item>07:30 – 09:05</item>
+        <item>09:20 – 10:55</item>
+        <item>11:10 – 12:45</item>
+        <item>13:00 – 14:35</item>
+        <item>14:50 – 16:25</item>
+        <item>16:35 – 18:10</item>
+    </string-array>
+    <string-array name="sixth_building_time">
+        <item>08:00 – 09:35</item>
+        <item>09:45 – 11:20</item>
+        <item>11:35 – 13:10</item>
+        <item>13:30 – 15:05</item>
+        <item>15:20 – 16:55</item>
+        <item>17:05 – 18:40</item>
+    </string-array>
+</resources>
