@@ -7,7 +7,8 @@
         android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name" />
+        android:text="@string/name"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtName"
@@ -23,7 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtName"
-        android:text="@string/aka" />
+        android:text="@string/aka"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtAka"
@@ -32,14 +34,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/btnClear"
-        android:layout_below="@+id/lblAka" />
+        android:layout_below="@+id/lblAka"
+        style="@style/label" />
 
     <TextView
         android:id="@+id/lblSurname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtAka"
-        android:text="@string/surname" />
+        android:text="@string/surname"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtSurname"
@@ -55,7 +59,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtSurname"
-        android:text="@string/email" />
+        android:text="@string/email"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtEmail"
@@ -72,7 +77,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtEmail"
-        android:text="@string/skype" />
+        android:text="@string/skype"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtSkype"
@@ -89,7 +95,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtSkype"
-        android:text="@string/phone" />
+        android:text="@string/phone"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtPhone"

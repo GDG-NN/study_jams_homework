@@ -15,18 +15,17 @@
         android:id="@+id/imageView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="8"
+        android:layout_weight="9"
         android:src="@drawable/puppy" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:text="@string/options_error"
-        android:textAlignment="center"
         android:textColor="@color/options_err_text"
-        android:textSize="@dimen/options_err_text"
-        android:textStyle="bold" />
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="@dimen/options_err_text" />
 
 </LinearLayout>

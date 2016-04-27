@@ -7,7 +7,8 @@
         android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/name" />
+        android:text="@string/name"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtName"
@@ -23,7 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtName"
-        android:text="@string/type" />
+        android:text="@string/type"
+        style="@style/label" />
 
     <Spinner
         android:id="@+id/lstType"
@@ -38,7 +40,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lstType"
-        android:text="@string/date" />
+        android:text="@string/date"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtDate"
@@ -54,7 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblDate"
-        android:text="@string/time" />
+        android:text="@string/time"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtTime"
@@ -70,7 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblTime"
-        android:text="@string/description" />
+        android:text="@string/description"
+        style="@style/label" />
 
     <EditText
         android:id="@+id/txtDescription"

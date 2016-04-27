@@ -27,6 +27,6 @@
         android:textAlignment="center"
         android:textColor="@color/options_err_text"
         android:textSize="@dimen/options_err_text"
-        android:textStyle="bold" />
+        style="@style/label" />
 
 </LinearLayout>
