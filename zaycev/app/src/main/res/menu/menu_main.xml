@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.levrite.washcar.MainActivity">
+    <item
+        android:id="@+id/change_city"
+        android:title="@string/change_city"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/share_app"
+        android:orderInCategory="100"
+        android:title="@string/share_app"
+        app:showAsAction="never" />
+</menu>
