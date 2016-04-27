@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -47,8 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void click_login(View v) {
-        Intent SecAct = new Intent(getApplicationContext(), MainActivity.class);
+    public void click_pager(View v){
+        Intent SecAct = new Intent(getApplicationContext(), LogActivity.class);
+        startActivity(SecAct);
+    }
+
+    public void click_registration(View v){
+        Intent SecAct = new Intent(getApplicationContext(), RegActivity.class);
         startActivity(SecAct);
     }
 
@@ -61,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new LoginFragment();
+                    return new SignInFragment();
                 case 1:
                     return new RegistrationFragment();
                 default:
