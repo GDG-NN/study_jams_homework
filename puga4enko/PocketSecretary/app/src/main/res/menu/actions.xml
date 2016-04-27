@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pocketsecretary="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mniAnalytics"
+        android:title="@string/menu_analytics"
+        pocketsecretary:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/mniOptions"
+        android:title="@string/menu_options"
+        pocketsecretary:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/mniAbout"
+        android:title="@string/menu_about"
+        pocketsecretary:showAsAction="collapseActionView" />
+
+</menu>
