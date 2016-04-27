@@ -65,7 +65,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         // получаем данные из полей ввода
         String word = etWord.getText().toString();
-        chStatus = validateText(word,"GE");
+        chStatus = validateText(word, "GE");
 
         if ( chStatus != null) {
             etWord.setError(getResources().getString(R.string.txv_word) + " " + chStatus);
@@ -194,10 +194,12 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
     private String validateText(String str, String langStr) {
         String errMsg = null;
-        // RU Regexp
-        String ruStrReg = "^[А-яЁё][-А-яЁё]+$";
         // GE Regexp
-        String geStrReg = "^[a-zA-Z]+$";
+        String geStrReg = "^[a-zA-Z ]+$";
+
+        // RU Regexp
+        String ruStrReg = "^[А-яЁё ][-А-яЁё ]+$";
+
 
         if (str.length() == 0)
              errMsg = getResources().getString(R.string.emsg_edit_required);
@@ -205,14 +207,15 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 //            errMsg = getResources().getString(R.string.emsg_edit_inv_char);
 //        }
 
-        if (langStr == "RU")
-            if (!str.matches(ruStrReg)) {
-                errMsg = "must be in Russian!";
-            }
         if (langStr == "GE")
             if (!str.matches(geStrReg)) {
                 errMsg = "must be in German!";
             }
+        if (langStr == "RU")
+            if (!str.matches(ruStrReg)) {
+                errMsg = "must be in Russian!";
+            }
+
 
         return errMsg;
     }

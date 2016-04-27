@@ -10,5 +10,5 @@
     <string name="txv_words_added">Words added</string>
     <string name="txv_word_add_counter">0</string>
     <string name="txv_words_studied">Words studied</string>
-    <string name="txv_word_std_counter">0</string>
+    <string name="txv_word_std_counter">0%</string>
 </resources>

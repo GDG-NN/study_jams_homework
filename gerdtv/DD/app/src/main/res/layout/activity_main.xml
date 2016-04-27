@@ -59,11 +59,10 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
-        >
+        android:layout_below="@+id/linearLayout">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_add_word"
             android:id="@+id/addWordsButton"
@@ -71,10 +70,11 @@
             android:background="@color/colorBgdBtn"
             android:layout_margin="10dp"
             android:padding="15dp"
+            android:textSize="20sp"
             android:layout_gravity="center"
             android:onClick="openDict"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_lesson"
             android:id="@+id/stdWordsButton"
@@ -82,6 +82,7 @@
             android:background="@color/colorBgdBtn"
             android:layout_margin="10dp"
             android:padding="15dp"
+            android:textSize="20sp"
             android:layout_gravity="center"
             android:onClick="openLes"/>
     </LinearLayout>

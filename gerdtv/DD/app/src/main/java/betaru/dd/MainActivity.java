@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DictActivity.class);
         startActivity(intent);
     }
+
+    public void openLes(View v) {
+        Intent intent = new Intent(this, LessonActivity.class);
+        startActivity(intent);
+    }
 }

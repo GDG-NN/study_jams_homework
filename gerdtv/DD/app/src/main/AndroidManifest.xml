@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DictActivity"></activity>
+        <activity android:name=".DictActivity" />
+        <activity android:name=".LessonActivity"></activity>
     </application>
 
 </manifest>

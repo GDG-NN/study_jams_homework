@@ -59,6 +59,9 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBgdBtn"
             android:textColor="@color/colorTextBtn"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="20sp"
             android:text="@string/btn_add">
         </Button>
 
