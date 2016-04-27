@@ -38,10 +38,10 @@ public class Options extends AppCompatActivity {
                 Intent intentAnalytics = new Intent(this, com.andrejjj.pocketsecretary.activities.Analytics.class);
                 startActivity(intentAnalytics);
                 return (true);
-            case R.id.mniOptions:
-                Intent intentOptions = new Intent(this, com.andrejjj.pocketsecretary.activities.Options.class);
-                startActivity(intentOptions);
-                return (true);
+//            case R.id.mniOptions:
+//                Intent intentOptions = new Intent(this, com.andrejjj.pocketsecretary.activities.Options.class);
+//                startActivity(intentOptions);
+//                return (true);
             case R.id.mniAbout:
                 Toast.makeText(this, R.string.about_toast, Toast.LENGTH_LONG)
                         .show();
