@@ -45,11 +45,6 @@
           teacher="Intel"
           day="Четверг"
           time="18.00 - 19.30"/>
-     <sample
-         subject="Тестирование ПО"
-         teacher="Intel"
-         day="Четверг"
-         time="18.00 - 19.30"/>
  </thursday>
  <friday>
  <sample
