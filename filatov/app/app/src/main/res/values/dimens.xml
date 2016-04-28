@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="button__padding">16dp</dimen>
+    <dimen name="button__text_size">16sp</dimen>
+
+    <dimen name="error__padding">16dp</dimen>
+    <dimen name="error__text_size">18sp</dimen>
+
+    <dimen name="message_list__item_padding">16dp</dimen>
+    <dimen name="message_list__item_name_margin_bottom">4dp</dimen>
+    <dimen name="message_list__item_name_text_size">14sp</dimen>
+    <dimen name="message_list__item_title_text_size">18sp</dimen>
+    <dimen name="message_list__item_divider_height">1dp</dimen>
+
+    <dimen name="message_detail__padding">16dp</dimen>
+    <dimen name="message_detail__place_margin_bottom">12dp</dimen>
+    <dimen name="message_detail__place_text_size">16sp</dimen>
+    <dimen name="message_detail__title_margin_bottom">16dp</dimen>
+    <dimen name="message_detail__title_text_size">22sp</dimen>
+    <dimen name="message_detail__text_text_size">16sp</dimen>
+</resources>

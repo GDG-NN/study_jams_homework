@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="button__padding">24dp</dimen>
+    <dimen name="button__text_size">24sp</dimen>
+
+    <dimen name="error__padding">24dp</dimen>
+    <dimen name="error__text_size">27sp</dimen>
+
+    <dimen name="message_list__item_padding">24dp</dimen>
+    <dimen name="message_list__item_name_margin_bottom">6dp</dimen>
+    <dimen name="message_list__item_name_text_size">21sp</dimen>
+    <dimen name="message_list__item_title_text_size">27sp</dimen>
+    <dimen name="message_list__item_divider_height">1dp</dimen>
+
+    <dimen name="message_detail__padding">24dp</dimen>
+    <dimen name="message_detail__place_margin_bottom">18dp</dimen>
+    <dimen name="message_detail__place_text_size">24sp</dimen>
+    <dimen name="message_detail__title_margin_bottom">24dp</dimen>
+    <dimen name="message_detail__title_text_size">33sp</dimen>
+    <dimen name="message_detail__text_text_size">24sp</dimen>
+</resources>

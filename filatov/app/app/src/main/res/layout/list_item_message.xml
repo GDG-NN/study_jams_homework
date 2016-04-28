@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/message_list__item_padding"
+    android:background="@drawable/selector_item_message"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_message__date"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/message_list__item_name_margin_bottom"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/message_list__item_name_text_size"
+        android:textColor="@color/text_primary_light" />
+
+    <TextView
+        android:id="@+id/item_message__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/message_list__item_title_text_size"
+        android:textColor="@color/text_primary_dark" />
+</LinearLayout>
