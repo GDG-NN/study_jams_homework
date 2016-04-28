@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GDG NN Filatov</string>
+    <string name="activity_title__message_list">Messages</string>
+    <string name="messages_list__item_title_default">No title</string>
+    <string name="error__button_retry">Retry</string>
+
+    <string name="error__message_default">There was an application error</string>
+    <string name="error__message_no_connection">Cannot retrieve messages.\nCheck your internet connection</string>
+    <string name="error__message_not_found">Message not found</string>
+</resources>

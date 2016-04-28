@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_primary_dark">#a1887f</color>
+    <color name="app_primary">#bcaaa4</color>
+    <color name="app_accent">#bdbdbd</color>
+
+    <color name="text_primary_dark">#020202</color>
+    <color name="text_primary_light">#8b8b8b</color>
+
+    <color name="button_text_primary">#ffffff</color>
+
+    <color name="message_list__item_selector">#e0e0e0</color>
+    <color name="message_list__item_selector_focused">@color/message_list__item_selector</color>
+    <color name="message_list__item_selector_pressed">@color/message_list__item_selector</color>
+    <color name="message_list__item_selector_selected">@color/message_list__item_selector</color>
+    <color name="message_list__item_divider">#e0e0e0</color>
+</resources>

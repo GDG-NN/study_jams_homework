@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/message_detail__padding"
+            android:orientation="vertical"
+            tools:context=".ui.activity.MessageDetailActivity">
+
+            <TextView
+                android:id="@+id/message_detail__place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/message_detail__place_margin_bottom"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/message_detail__place_text_size" />
+
+            <TextView
+                android:id="@+id/message_detail__title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/message_detail__title_margin_bottom"
+                android:textSize="@dimen/message_detail__title_text_size"
+                android:textColor="@color/text_primary_dark" />
+
+            <TextView
+                android:id="@+id/message_detail__text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/message_detail__text_text_size"
+                android:textColor="@color/text_primary_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_progress" />
+    <include layout="@layout/view_error" />
+</RelativeLayout>
