@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">DD</string>
+    <string name="activ_main_title">Profile</string>
+    <string name="activ_dict_title">Dictionary</string>
+    <string name="activ_less_title">Lesson</string>
     <string name="txv_word">Word</string>
     <string name="emsg_edit_required"> is required!</string>
     <string name="emsg_edit_inv_char"> contains an invalid character!</string>

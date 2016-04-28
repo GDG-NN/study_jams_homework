@@ -8,15 +8,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".MainActivity"
+            android:label="@string/activ_main_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DictActivity" />
-        <activity android:name=".LessonActivity"></activity>
+        <activity android:name=".DictActivity"
+            android:label="@string/activ_dict_title"/>
+        <activity android:name=".LessonActivity"
+            android:label="@string/activ_less_title"></activity>
     </application>
 
 </manifest>

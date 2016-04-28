@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    tools:context="betaru.dd.MainActivity">
+    tools:context="betaru.dd.MainActivity"
+    android:background="#B6B6B6">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,54 +13,64 @@
         android:orientation="vertical"
         android:id="@+id/linearLayout"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:baselineAligned="false"
+        android:layout_margin="5dp"
+        android:background="#ffffff">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30sp"
-            android:textColor="@color/colorLabel"
+            android:textSize="35sp"
             android:layout_margin="5dp"
             android:text="@string/txv_words_added"
-            android:id="@+id/txv_words_added" />
+            android:id="@+id/txv_words_added"
+            android:textStyle="bold"
+            android:textColor="#388E3C" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30sp"
-            android:textColor="@color/colorLabel"
+            android:textSize="35sp"
+            android:textColor="#388E3C"
             android:layout_margin="5dp"
             android:text="@string/txv_word_add_counter"
-            android:id="@+id/txv_word_add_counter" />
+            android:id="@+id/txv_word_add_counter"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30sp"
-            android:textColor="@color/colorLabel"
+            android:textSize="35sp"
+            android:textColor="#F44336"
             android:layout_margin="5dp"
             android:text="@string/txv_words_studied"
-            android:id="@+id/txv_words_studied" />
+            android:id="@+id/txv_words_studied"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30sp"
-            android:textColor="@color/colorLabel"
+            android:textSize="35sp"
+            android:textColor="#F44336"
             android:layout_margin="5dp"
             android:text="@string/txv_word_std_counter"
-            android:id="@+id/txv_word_std_counter" />
+            android:id="@+id/txv_word_std_counter"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout">
+        android:layout_margin="5dp"
+        android:layout_below="@+id/linearLayout"
+        android:background="#ffffff">
 
         <Button
             android:layout_width="match_parent"
@@ -72,7 +83,9 @@
             android:padding="15dp"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:onClick="openDict"/>
+            android:onClick="openDict"
+            android:textStyle="bold"
+            android:typeface="sans" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,7 +97,9 @@
             android:padding="15dp"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:onClick="openLes"/>
+            android:onClick="openLes"
+            android:textStyle="bold"
+            android:typeface="sans" />
     </LinearLayout>
 
 </RelativeLayout>

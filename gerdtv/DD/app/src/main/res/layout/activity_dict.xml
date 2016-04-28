@@ -3,12 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#B6B6B6">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
 
         <TextView
             android:layout_width="match_parent"
@@ -52,7 +54,8 @@
         android:id="@+id/buttons_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF">
         <Button
             android:id="@+id/btnAdd"
             android:layout_width="match_parent"
@@ -62,6 +65,8 @@
             android:layout_margin="10dp"
             android:padding="15dp"
             android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans"
             android:text="@string/btn_add">
         </Button>
 
@@ -71,7 +76,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/result_container">
+        android:id="@+id/result_container"
+        android:background="#FFFFFF">
 
         <LinearLayout
             android:orientation="horizontal"
