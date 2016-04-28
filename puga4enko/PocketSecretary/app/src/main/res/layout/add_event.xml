@@ -4,44 +4,26 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/lblName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        style="@style/label" />
-
-    <EditText
-        android:id="@+id/txtName"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/lblName"
-        android:inputType="text" />
-
-    <TextView
         android:id="@+id/lblType"
+        style="@style/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtName"
-        android:text="@string/type"
-        style="@style/label" />
+        android:text="@string/type" />
 
     <Spinner
         android:id="@+id/lstType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtName"
         android:layout_toEndOf="@+id/btnSave"
         android:layout_toRightOf="@+id/btnSave" />
 
     <TextView
         android:id="@+id/lblDate"
+        style="@style/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lstType"
-        android:text="@string/date"
-        style="@style/label" />
+        android:text="@string/date" />
 
     <EditText
         android:id="@+id/txtDate"
@@ -54,11 +36,11 @@
 
     <TextView
         android:id="@+id/lblTime"
+        style="@style/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblDate"
-        android:text="@string/time"
-        style="@style/label" />
+        android:text="@string/time" />
 
     <EditText
         android:id="@+id/txtTime"
@@ -71,11 +53,11 @@
 
     <TextView
         android:id="@+id/lblDescription"
+        style="@style/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblTime"
-        android:text="@string/description"
-        style="@style/label" />
+        android:text="@string/description" />
 
     <EditText
         android:id="@+id/txtDescription"

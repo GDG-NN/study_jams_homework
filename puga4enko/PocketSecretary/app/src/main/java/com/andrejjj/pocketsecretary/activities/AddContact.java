@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.andrejjj.pocketsecretary.R;
@@ -19,10 +22,56 @@ import com.andrejjj.pocketsecretary.R;
  *          This is an Activity for adding contacts
  */
 public class AddContact extends AppCompatActivity {
-    @Override
+
+    private Button mButtonSave;
+    private Button mButtonClear;
+    private EditText mEditTextName;
+    private EditText mEditTextAka;
+    private EditText mEditTextSurname;
+    private EditText mEditTextEmail;
+    private EditText mEditTextSkype;
+    private EditText mEditTextPhone;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_contact);
+
+        mButtonClear = (Button) findViewById(R.id.btnClear);
+        mButtonSave = (Button) findViewById(R.id.btnSave);
+        mEditTextName = (EditText) findViewById(R.id.txtName);
+        mEditTextAka = (EditText) findViewById(R.id.txtAka);
+        mEditTextSurname = (EditText) findViewById(R.id.txtSurname);
+        mEditTextEmail = (EditText) findViewById(R.id.txtEmail);
+        mEditTextSkype = (EditText) findViewById(R.id.txtSkype);
+        mEditTextPhone = (EditText) findViewById(R.id.txtPhone);
+
+        mButtonSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                saveContact();
+            }
+        });
+
+        mButtonClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                clearAllFields();
+            }
+        });
+    }
+
+    private void clearAllFields() {
+        mEditTextName.setText("");
+        mEditTextAka.setText("");
+        mEditTextSurname.setText("");
+        mEditTextEmail.setText("");
+        mEditTextSkype.setText("");
+        mEditTextPhone.setText("");
+    }
+
+    private void saveContact() {
+        //TODO adding contact;
     }
 
     @Override

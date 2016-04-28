@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.andrejjj.pocketsecretary.R;
@@ -19,10 +20,18 @@ import com.andrejjj.pocketsecretary.R;
  *          This is an Activity for adding event
  */
 public class AddEvent extends AppCompatActivity {
+
+    private EditText mEditTextDate;
+    private EditText mEditTextTime;
+    private EditText mEditTextDescription;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_event);
+
+        mEditTextDate = (EditText) findViewById(R.id.txtDate);
     }
 
     @Override

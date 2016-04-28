@@ -14,7 +14,7 @@ public class Client {
     private int id;
     private String firstName;
     private String secondName;
-    private String patronic;
+    private String aka;
     private HashSet<Phone> phones;
     private String email;
     private String skype;
@@ -25,10 +25,10 @@ public class Client {
         this(firstName, null, null, new HashSet<Phone>(), null, null, null, new HashSet<AudioNote>());
     }
 
-    public Client(String firstName, String secondName, String patronic, HashSet<Phone> phones, String email, String skype, String additionalTextNote, HashSet<AudioNote> additionalAudioNote) {
+    public Client(String firstName, String secondName, String aka, HashSet<Phone> phones, String email, String skype, String additionalTextNote, HashSet<AudioNote> additionalAudioNote) {
         this.firstName = firstName;
         this.secondName = secondName;
-        this.patronic = patronic;
+        this.aka = aka;
         this.phones = phones;
         this.email = email;
         this.skype = skype;
@@ -60,12 +60,12 @@ public class Client {
         this.secondName = secondName;
     }
 
-    public String getPatronic() {
-        return patronic;
+    public String getAka() {
+        return aka;
     }
 
-    public void setPatronic(String patronic) {
-        this.patronic = patronic;
+    public void setAka(String patronic) {
+        this.aka = patronic;
     }
 
     public HashSet<Phone> getPhones() {

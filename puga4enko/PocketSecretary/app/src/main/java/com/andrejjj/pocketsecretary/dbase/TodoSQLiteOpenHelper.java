@@ -40,7 +40,7 @@ public class TodoSQLiteOpenHelper extends SQLiteOpenHelper {
     private static final String CLIENTS_ID = "_id";
     private static final String CLIENTS_FIRST_NAME = "firstName";
     private static final String CLIENTS_SECOND_NAME = "secondName";
-    private static final String CLIENTS_PATRONIC = "patronic";
+    private static final String CLIENTS_AKA = "aka";
     private static final String CLIENTS_PHONES = "phones";
     private static final String CLIENTS_EMAIL = "email";
     private static final String CLIENTS_SKYPE = "skype";
@@ -104,7 +104,7 @@ public class TodoSQLiteOpenHelper extends SQLiteOpenHelper {
                 + CLIENTS_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + CLIENTS_FIRST_NAME + " TEXT, "
                 + CLIENTS_SECOND_NAME + " TEXT, "
-                + CLIENTS_PATRONIC + " TEXT, "
+                + CLIENTS_AKA + " TEXT, "
                 + CLIENTS_PHONES + " INTEGER, "
                 + CLIENTS_EMAIL + " TEXT, "
                 + CLIENTS_SKYPE + " TEXT, "
