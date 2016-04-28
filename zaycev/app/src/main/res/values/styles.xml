@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+    </style>
+
+    <style name="SpinnerItem" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:checkMark">@color/icons</item>
+        <item name="android:dropDownSelector">@color/icons</item>
+
+    </style>
+
+
+</resources>

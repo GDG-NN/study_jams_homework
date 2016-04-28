@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Weather wash</string>
+    <string-array name="city">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Нижний Новгород</item>
+    </string-array>
+
+    <string name="find_carwash">Найти мойку</string>
+    <string name="more_weather">Подробнее о погоде</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="good_weather">В ближайшие дни будет прекрасная погода</string>
+    <string name="fine_weather">В ближайшие дни будет облачная погода</string>
+    <string name="bad_weather">В ближайшие дни будет плохая погода</string>
+
+    <string name="error_connect">Ошибка получения данных с сервера. Проверьте своё интернет соединение и попробуйте ещё раз</string>
+
+    <string name="welcome_app">Добро пожаловать</string>
+    <string name="chose_city">Выберите свой город</string>
+
+    <string name="next_screen">ПРОДОЛЖИТЬ</string>
+
+    <string name="change_city">Сменить город</string>
+    <string name="share_app">Поделиться</string>
+    
+    <string name="select_city">Выберите другой город</string>
+    
+    <string name="accept_change">Принять</string>
+    <string name="cancel_change">Отменить</string>
+
+    <string name="share_text">Привет, я мою свою машину только если мне советует приложение Weather wash. Качай его в Google Play</string>
+</resources>
