@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ershov.max.foodkeeper.AddFoodItemActivity"
+    tools:showIn="@layout/activity_add_food_item"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/bckg_adding"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.ershov.max.foodkeeper.AddFoodItemActivity"
+        tools:showIn="@layout/activity_add_food_item"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name_title"
+            android:id="@+id/textView2"
+            android:textSize="@dimen/title_text_size"
+            android:layout_gravity="start|center_horizontal"
+            android:textColor="#000000"
+            android:paddingStart="@dimen/padding_start"
+            android:paddingEnd="@dimen/padding_end"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:hint="@string/input_product_name_here_hint"
+            android:singleLine="true"
+            android:fadeScrollbars="false"
+            android:textSize="@dimen/hint_text_size"
+            android:layout_marginBottom="@dimen/margin_between" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expiration_date_title"
+            android:id="@+id/textView4"
+            android:textSize="@dimen/title_text_size"
+            android:layout_gravity="start|center_horizontal"
+            android:textColor="#000000"
+            android:paddingStart="@dimen/padding_start"
+            android:paddingEnd="@dimen/padding_end" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/inputDateText"
+                android:hint="@string/long_tap_or_input_here_hint"
+                android:textSize="@dimen/hint_text_size"
+                android:layout_marginBottom="@dimen/margin_between"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_text"
+                android:id="@+id/textView"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/margin_between"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginStart="@dimen/margin_between" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/days_before_expiration_title"
+            android:id="@+id/textView3"
+            android:textSize="@dimen/title_text_size"
+            android:layout_gravity="start|center_horizontal"
+            android:textColor="#000000"
+            android:paddingStart="@dimen/padding_start"
+            android:paddingEnd="@dimen/padding_end" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daysBeforeText"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:hint="@string/input_number_of_days_here_hint"
+            android:textSize="@dimen/hint_text_size"
+            android:layout_marginBottom="@dimen/margin_between" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/ok"
+                android:id="@+id/finishAdding"
+                android:onClick="onClickFinishAdding"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/margin_end"
+                android:background="#B4E2E2E2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/add_more"
+                android:id="@+id/continueAdding"
+                android:layout_gravity="bottom"
+                android:onClick="onClickContinueAdding"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_start"
+                android:background="#B4E2E2E2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

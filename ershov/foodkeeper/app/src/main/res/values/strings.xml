@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Food Keeper</string>
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_add_food_item">Добавим продукт?</string>
+
+    <string name="del_alert_title">Подтверждение</string>
+    <string name="del_alert_message">Вы уверены, что хотите удалить этот продукт?</string>
+    <string name="del_alert_btn_yes">Да</string>
+    <string name="del_alert_btn_no">Нет</string>
+
+    <string name="toaster_msg_success">Данные сохранены</string>
+    <string name="toaster_msg_wrong_date">Неверная дата</string>
+    <string name="toaster_msg_fail">Что-то пошло не так</string>
+
+    <string name="product_name_title">Название продукта</string>
+    <string name="input_product_name_here_hint">Введите название здесь</string>
+    <string name="expiration_date_title">Дата истечения срока годности (ДД-ММ-ГГГГ)</string>
+    <string name="long_tap_or_input_here_hint">Долгий тап, чтобы выбрать</string>
+    <string name="or_text">или</string>
+    <string name="days_before_expiration_title">Дней до истечения срока годности</string>
+    <string name="input_number_of_days_here_hint">Введите число дней здесь</string>
+    <string name="ok">Готово</string>
+    <string name="add_more">Добавить еще</string>
+
+</resources>
