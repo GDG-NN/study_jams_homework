@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#536DFE</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTextBtn">#ffffff</color>
+    <color name="colorBgdBtn">#33b5e5</color>
+    <color name="colorLabel">#303030</color>
+    <color name="colorArticleDer">#1f2cde</color>
+    <color name="colorArticleDie">#ff1100</color>
+    <color name="colorArticleDas">#44be20</color>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#B6B6B6">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/colorLabel"
+            android:text="@string/txv_word"
+            android:id="@+id/label_world">
+        </TextView>
+
+        <EditText
+            android:id="@+id/etWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txv_trans"
+            android:gravity="center"
+            android:textColor="@color/colorLabel"
+            android:textSize="25sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/etTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBgdBtn"
+            android:textColor="@color/colorTextBtn"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:text="@string/btn_add">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_container"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="30sp"
+                android:enabled="false"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorLabel"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txv_article"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="25sp"
+                android:enabled="false"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorLabel"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txv_ger_result" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/colorLabel"
+            android:enabled="false"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txv_rus_result" />
+
+    </LinearLayout>
+
+</LinearLayout>
