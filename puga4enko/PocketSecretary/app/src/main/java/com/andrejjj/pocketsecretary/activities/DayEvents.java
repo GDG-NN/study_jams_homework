@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.andrejjj.pocketsecretary.R;
@@ -16,10 +19,29 @@ import com.andrejjj.pocketsecretary.R;
  */
 public class DayEvents extends AppCompatActivity {
 
+    EditText mEditTextDayEvents;
+    Button mButtonAddEvent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.day_events);
+
+        mEditTextDayEvents = (EditText) findViewById(R.id.txtDayEvents);
+        mButtonAddEvent = (Button) findViewById(R.id.btnAddEvent);
+
+        mButtonAddEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addEvent();
+            }
+        });
+
+    }
+
+    private void addEvent() {
+        Intent intentAddEvent = new Intent(this, com.andrejjj.pocketsecretary.activities.AddEvent.class);
+        startActivity(intentAddEvent);
     }
 
     @Override
