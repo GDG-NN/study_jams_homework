@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/insert"
+        android:showAsAction="always"
+        android:title="@string/insert"/>
+
+    <item
+        android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:showAsAction="ifRoom"
+        android:title="@string/help"/>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mixasr.listwishes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/signature"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ListAllActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListAllEditActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".ElementAllActivity">
+        </activity>
+        <activity
+            android:name=".ElementAllEditActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <provider
+            android:name=".contentprovider.MyContentProvider"
+            android:authorities="com.mixasr.listwishes.contentprovider"
+            android:exported="false">
+        </provider>
+    </application>
+
+</manifest>

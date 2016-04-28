@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ListWishes</string>
+    <string name="no_list">The list is empty. Please use the Insert button to add records</string>
+    <string name="no_elements">The list is empty. Please use the Insert button to add records</string>
+    <string name="menu_insert">Add Item</string>
+    <string name="menu_list_delete">Delete List</string>
+    <string name="menu_list_edit">Edit List</string>
+    <string name="menu_element_delete">Delete Element</string>
+    <string name="menu_element_edit">Edit Element</string>
+    <string name="list_title">Title</string>
+    <string name="list_description">Description</string>
+    <string name="list_edit_title">Title</string>
+    <string name="list_edit_description">Description</string>
+    <string name="list_edit_confirm">Confirm</string>
+    <string name="done">Done</string>
+    <string name="list">List</string>
+    <string name="checked">Checked</string>
+    <string name="insert">Insert</string>
+    <string name="no_title">Please enter a title</string>
+    <string name="help">Help</string>
+    <string name="help_text_list">Tap on the item to display list items. A long tap opens context menu</string>
+    <string name="help_text_element">Tap on the item to edit. A long tap opens context menu</string>
+</resources>
