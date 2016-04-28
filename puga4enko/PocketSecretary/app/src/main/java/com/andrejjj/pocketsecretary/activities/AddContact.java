@@ -13,10 +13,6 @@ import android.widget.Toast;
 import com.andrejjj.pocketsecretary.R;
 
 /**
- * Created by Andrejjj on 25.04.2016.
- */
-
-/**
  * @author Andrey S. Pugachenko
  * @version 0.0.1
  *          This is an Activity for adding contacts
