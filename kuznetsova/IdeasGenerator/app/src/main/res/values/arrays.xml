@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="first_part">
+		<item>Cloud storage</item>
+		<item>Dashboard for smart home</item>
+		<item>Anonymous chat</item>
+		<item>Classmates clone</item>
+		<item>Photo editor</item>
+		<item>Facebook clone</item>
+		<item>Blogger\'s hosting</item>
+		<item>Video editor</item>
+		<item>Weather app</item>
+		<item>Cooking app</item>
+		<item>Online auction</item>
+		<item>Audio player</item>
+		<item>Ideas generator</item>
+		<item>Painter</item>
+		<item>Karaoke</item>
+		<item>Meeting app</item>
+		<item>Calculator</item>
+		<item>Online shop</item>
+		<item>Online bank</item>
+		<item>Diary</item>
+		<item>Service for restaurants selection</item>
+		<item>Music editor</item>
+		<item>App for hairstyles selection</item>
+		<item>Service for music selection</item>
+		<item>Service for dresses selection</item>
+		<item>Old consoles emulator</item>
+		<item>Bulletin board</item>
+		<item>File manager</item>
+		<item>Navigator</item>
+		<item>Video chat</item>
+	</string-array>
+	<string-array name="second_part">
+		<item>for ambition people</item>
+		<item>with micro transactions</item>
+		<item>with different color schemes</item>
+		<item>with amazing animations</item>
+		<item>with button "Luck search!"</item>
+		<item>with geolocation</item>
+		<item>without cool features</item>
+		<item>with Bitcoin billing</item>
+		<item>with micro billing</item>
+		<item>without ad</item>
+		<item>for sociopaths</item>
+		<item>for alcoholics</item>
+		<item>for programmers</item>
+		<item>with preference and ladies</item>
+		<item>with voice control</item>
+		<item>with possibilities to comment</item>
+		<item>with special effects</item>
+		<item>for housewives</item>
+		<item>with elephants</item>
+		<item>with synchronization</item>
+		<item>with Twitter integration</item>
+		<item>with social networks integration</item>
+		<item>with two-factor authentication</item>
+		<item>for old people</item>
+		<item>for you</item>
+		<item>with monthly billing</item>
+		<item>with geo targeting</item>
+		<item>for Justin Bibber fans</item>
+		<item>with group collaboration</item>
+		<item>with flashlight</item>
+	</string-array>
+</resources>

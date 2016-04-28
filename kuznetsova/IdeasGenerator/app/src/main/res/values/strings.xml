@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ideas generator for GDG</string>
+	<string name="share_Button">Share</string>
+	<string name="generate_Button">Idea maker</string>
+</resources>
