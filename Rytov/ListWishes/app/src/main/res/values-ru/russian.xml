@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Список желаний</string>
+    <string name="no_list">Список пуст, используйте кнопку Добавить, для добавления новых элементов</string>
+    <string name="no_elements">Список пуст, используйте кнопку Добавить, для добавления новых элементов</string>
+    <string name="menu_insert">Добавить</string>
+    <string name="menu_list_delete">Удалить список</string>
+    <string name="menu_list_edit">Редактировать список</string>
+    <string name="menu_element_delete">Удалить элемент</string>
+    <string name="menu_element_edit">Редактировать элемент</string>
+    <string name="list_title">Заголовок</string>
+    <string name="list_description">Описание</string>
+    <string name="list_edit_title">Заголовок</string>
+    <string name="list_edit_description">Описание</string>
+    <string name="list_edit_confirm">Готово</string>
+    <string name="done">Выполнено</string>
+    <string name="list">Список</string>
+    <string name="checked">Выбрано</string>
+    <string name="insert">Добавить</string>
+    <string name="no_title">Укажите заголовок</string>
+    <string name="help">Помощь</string>
+    <string name="help_text_list">Нажмите на элемент для его просмотра. Используйте длинное нажатие для вызова контекстного меню</string>
+    <string name="help_text_element">Нажмите на элемент для его редактирования. Используйте длинное нажатие для вызова контекстного меню</string>
+</resources>
