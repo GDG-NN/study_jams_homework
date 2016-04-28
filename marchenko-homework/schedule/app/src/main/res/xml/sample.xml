@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<samples>
+    <tuesday>
+     day="Вторник"
+     <sample
+         subject="ВМиФА"
+         teacher="Эгамов А.И."
+         day="Вторник"
+         time="9:40 - 11.10"/>
+     <sample
+         subject="ВМиФА"
+         teacher="Эгамов А.И."
+         day="Вторник"
+         time="11.20 - 12.50"/>
+     <sample
+         subject="Паралл. программ."
+         teacher="Гергель В.П."
+         day="Вторник"
+         time="13.00 - 14.30"/>
+    </tuesday>
+     <thursday>
+ <sample
+         subject="МЛиТА"
+         teacher="Мокеев Д.Б."
+         day="Четверг"
+         time="8.00 - 9.40"/>
+     <sample
+         subject="МЛиТА"
+         teacher="Мокеев Д.Б."
+         day="Четверг"
+         time="9.40 - 11.10"/>
+      <sample
+          subject="МЛиТА"
+          teacher="Малышев Д.С."
+          day="Четверг"
+          time="11.10 - 12.50"/>
+      <sample
+          subject="Инструменты Разработчика"
+          teacher="Корняков К.В."
+          day="Четверг"
+          time="14.30 - 16.10"/>
+      <sample
+          subject="Тестирование ПО"
+          teacher="Intel"
+          day="Четверг"
+          time="18.00 - 19.30"/>
+ </thursday>
+ <friday>
+ <sample
+         subject="КСЕ"
+         teacher="Губина Е.В."
+         day="Пятница"
+         time="11.20 - 12.50"/>
+     <sample
+         subject="ММВЕ"
+         teacher="Губина Е.В."
+         day="Пятница"
+         time="13.00 - 14.30"/>
+     <sample
+         subject="ВМиФА"
+         teacher="Эгамов А.И."
+         day="Пятница"
+         time="14.40 - 16.10"/>
+     <sample
+         subject="С/К"
+         teacher="Козинов Е.А."
+         day="Пятница"
+         time="16.20 - 18.00"/>
+ </friday>>
+ <saturday>
+ <sample
+         subject="Физика"
+         teacher="Панкратова Е.В."
+         day="Суббота"
+         time="9.40 - 11.10"/>
+     <sample
+         subject="Физика"
+         teacher="Панкратова Е.В."
+         day="Суббота"
+         time="11.20 - 12.50"/>
+ </saturday>
+</samples>
