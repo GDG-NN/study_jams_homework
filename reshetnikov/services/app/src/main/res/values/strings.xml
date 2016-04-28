@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CADR Monitor</string>
+    <string name="start">Starting app</string>
+    <string name="notyTitle">Hackerspace CADR</string>
+    <string name="open">Open</string>
+    <string name="close">Closed :(</string>
+</resources>
