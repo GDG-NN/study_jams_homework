@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Хронометр</string>
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_cycle">Главное окно</string>
+    <string name="title_activity_list">Список активностей</string>
+    <string name="menu_main">Главное окно</string>
+    <string name="menu_list">Список активностей</string>
+    <string name="menu_resetTimer">Сбросить таймер</string>
+    <string name="menu_finish">Завершить день</string>
+    <string name="start">ПУСК</string>
+    <string name="hello">Начни свой день</string>
+    <string name="time">00:00:00</string>
+    <string name="action">Действие 1</string>
+    <string name="done">СТОП</string>
+</resources>

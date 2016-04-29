@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Chronometr</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cycle">Main</string>
+    <string name="title_activity_list">List</string>
+    <string name="menu_main">Main Window</string>
+    <string name="menu_list">Activities list</string>
+    <string name="menu_resetTimer">Reset timer</string>
+    <string name="menu_finish">Finish your day</string>
+    <string name="start">START</string>
+    <string name="hello">Start your day</string>
+    <string name="time">00:00:00</string>
+    <string name="action">Action 1</string>
+    <string name="done">DONE</string>
+</resources>
