@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ru.ekaterinapopkova.cookbook.MainActivity"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/main"
+        android:layout_alignParentEnd="false"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="42dp"
+        android:text="@string/welcome_app"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="@color/text_color"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/button_color"
+        android:onClick="onClick"
+        android:text="@string/button_name"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/main_text"
+        android:textColor="@color/text_color"
+        android:autoText="false"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textIsSelectable="false" />
+
+</RelativeLayout>
