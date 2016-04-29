@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.1.0_a4949b568e2de4c2d3084861a81e4c333736c0ab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.2.1_173fbcbf7a3def023797d8863e393f7ba79e894a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.2.1_b8b973af8a6853a05a94dc56d389c632d04b86e6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.1.0_3bb3a67c2ac37acef55eb30c2f9d3ea15460eb04.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.1_212c4aa0f1dba971a204823291f51123958cf281.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.2.1_7c8b934522590fb6c57782bdd9915cd4d6dd92c9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_16845742b29f4fa546ee0f3181652247c7fa8f6c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\Ekaterina\AndroidStudioProjects\Cookbook\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_394aecdbbefc5132a31d958e10811f511537e39c.jar" />
+    </item>
+
+</items>
