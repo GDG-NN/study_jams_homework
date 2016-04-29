@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:editTextStyle">@style/text</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:textColor">@color/material_deep_teal_500</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:background">@drawable/button_normal</item>
+    </style>
+
+    <style name="left_button" parent="button_style">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_from_edge</item>
+    </style>
+
+    <style name="right_button" parent="button_style">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_from_edge</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/label_text</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:padding">@dimen/label_padding</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/edit_text</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:padding">@dimen/edit_padding</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+</resources>

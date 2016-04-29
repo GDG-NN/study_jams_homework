@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblType"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type" />
+
+    <TextView
+        android:id="@+id/lblSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblType"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lstType"
+        android:layout_toRightOf="@+id/lblTime"
+        android:layout_toStartOf="@+id/lstType"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/lstType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnClear"
+        android:layout_alignStart="@+id/btnClear"
+        android:layout_toEndOf="@+id/btnSave" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lstType"
+        android:clickable="true"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/date" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lstType"
+        android:layout_toRightOf="@id/btnSave"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/lblTime"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDate"
+        android:clickable="true"
+        android:onClick="showTimePickerDialog"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/lblDescription"
+        style="@style/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTime"
+        android:text="@string/description" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtDate"
+        android:layout_below="@+id/lblDescription"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/microphone" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/btnAddAudio"
+        style="@style/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear" />
+
+
+</RelativeLayout>
