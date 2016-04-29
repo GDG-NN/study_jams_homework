@@ -5,10 +5,10 @@
     android:layout_height="wrap_content">
     <item
         android:id="@+id/mniAnalytics"
-        android:title="@string/menu_analytics"
-        pocketsecretary:showAsAction="collapseActionView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:title="@string/menu_analytics"
+        pocketsecretary:showAsAction="collapseActionView" />
     <!--<item-->
         <!--android:id="@+id/mniOptions"-->
         <!--android:title="@string/menu_options"-->
@@ -16,10 +16,16 @@
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content" />-->
     <item
-        android:id="@+id/mniAbout"
-        android:title="@string/menu_about"
-        pocketsecretary:showAsAction="collapseActionView"
+        android:id="@+id/mniContacts"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:title="@string/menu_contacts"
+        pocketsecretary:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/mniAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/menu_about"
+        pocketsecretary:showAsAction="collapseActionView" />
 
 </menu>

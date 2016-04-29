@@ -71,15 +71,6 @@ public class AddEvent extends AppCompatActivity implements AdapterView.OnItemSel
         mButtonAddAudio = (Button) findViewById(R.id.btnAddAudio);
         mSpinnerType = (Spinner) findViewById(R.id.lstType);
 
-        if (mSpinnerType != null) {
-            mSpinnerType.setOnItemSelectedListener(this);
-        }
-
-        ArrayAdapter<String> aa = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
-                items);
-        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mSpinnerType.setAdapter(aa);
-
         mButtonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
@@ -90,7 +81,11 @@ public class AddEvent extends AppCompatActivity implements AdapterView.OnItemSel
         mButtonClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                clearAllData();
+                mEditTextDate.setText("");
+                mEditTextDescription.setText("");
+                mTextViewSelection.setText("");
+                mTextViewDate.setText("");
+                mTextViewTime.setText("");
             }
         });
 
@@ -101,15 +96,17 @@ public class AddEvent extends AppCompatActivity implements AdapterView.OnItemSel
             }
         });
 
-        updateLabel();
-    }
+        if (mSpinnerType != null) {
+            mSpinnerType.setOnItemSelectedListener(this);
+        }
 
-    private void clearAllData() {
-        mEditTextDate.setText("");
-        mEditTextDescription.setText("");
-        mTextViewSelection.setText("");
-        mTextViewDate.setText("");
-        mTextViewTime.setText("");
+        ArrayAdapter<String> aa = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
+                items);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        mSpinnerType.setAdapter(aa);
+
+
+        updateLabel();
     }
 
     private void saveAllData() {
@@ -157,6 +154,10 @@ public class AddEvent extends AppCompatActivity implements AdapterView.OnItemSel
 //                Intent intentOptions = new Intent(this, com.andrejjj.pocketsecretary.activities.Options.class);
 //                startActivity(intentOptions);
 //                return (true);
+            case R.id.mniContacts:
+                Intent intentContacts = new Intent(this, com.andrejjj.pocketsecretary.activities.ContactsList.class);
+                startActivity(intentContacts);
+                return (true);
             case R.id.mniAbout:
                 Toast.makeText(this, R.string.about_toast, Toast.LENGTH_LONG)
                         .show();

@@ -32,16 +32,12 @@ public class DayEvents extends AppCompatActivity {
 
         mButtonAddEvent.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                addEvent();
+            public void onClick(final View v) {
+                Intent intentAddEvent = new Intent(getApplicationContext(), com.andrejjj.pocketsecretary.activities.AddEvent.class);
+                startActivity(intentAddEvent);
             }
         });
 
-    }
-
-    private void addEvent() {
-        Intent intentAddEvent = new Intent(this, com.andrejjj.pocketsecretary.activities.AddEvent.class);
-        startActivity(intentAddEvent);
     }
 
     @Override
@@ -61,6 +57,10 @@ public class DayEvents extends AppCompatActivity {
 //                Intent intentOptions = new Intent(this, com.andrejjj.pocketsecretary.activities.Options.class);
 //                startActivity(intentOptions);
 //                return (true);
+            case R.id.mniContacts:
+                Intent intentContacts = new Intent(this, com.andrejjj.pocketsecretary.activities.ContactsList.class);
+                startActivity(intentContacts);
+                return (true);
             case R.id.mniAbout:
                 Toast.makeText(this, R.string.about_toast, Toast.LENGTH_LONG)
                         .show();

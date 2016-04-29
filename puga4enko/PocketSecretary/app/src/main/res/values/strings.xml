@@ -16,5 +16,6 @@
     <string name="menu_options">Options</string>
     <string name="menu_analytics">Analytics</string>
     <string name="menu_about">About</string>
+    <string name="menu_contacts">Contacts</string>
     <string name="about_toast">Hi, it\'s simple ToDo app\nwhich\'s made by puga4enko@gmail.com\nfor Study Jam of GDG-NN</string>
 </resources>

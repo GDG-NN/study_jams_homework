@@ -5,13 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.andrejjj.pocketsecretary.R;
-
-/**
- * Created by Andrejjj on 25.04.2016.
- */
 
 /**
  * @author Andrey S. Pugachenko
@@ -19,10 +18,24 @@ import com.andrejjj.pocketsecretary.R;
  *          This is an Activity for options
  */
 public class ContactsList extends AppCompatActivity {
+    EditText mEditTextContacts;
+    Button mButtonAddContact;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contacts_list);
+
+        mEditTextContacts = (EditText) findViewById(R.id.txtContacts);
+        mButtonAddContact = (Button) findViewById(R.id.btnAddContact);
+
+        mButtonAddContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                Intent intentAddContact = new Intent(getApplicationContext(), com.andrejjj.pocketsecretary.activities.AddContact.class);
+                startActivity(intentAddContact);
+            }
+        });
     }
 
     @Override
@@ -42,6 +55,10 @@ public class ContactsList extends AppCompatActivity {
 //                Intent intentOptions = new Intent(this, com.andrejjj.pocketsecretary.activities.Options.class);
 //                startActivity(intentOptions);
 //                return (true);
+            case R.id.mniContacts:
+                Intent intentContacts = new Intent(this, com.andrejjj.pocketsecretary.activities.ContactsList.class);
+                startActivity(intentContacts);
+                return (true);
             case R.id.mniAbout:
                 Toast.makeText(this, R.string.about_toast, Toast.LENGTH_LONG)
                         .show();

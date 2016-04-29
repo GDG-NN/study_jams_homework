@@ -43,6 +43,10 @@ public class MonthsEvent extends AppCompatActivity {
 //                Intent intentOptions = new Intent(this, com.andrejjj.pocketsecretary.activities.Options.class);
 //                startActivity(intentOptions);
 //                return (true);
+            case R.id.mniContacts:
+                Intent intentContacts = new Intent(this, com.andrejjj.pocketsecretary.activities.ContactsList.class);
+                startActivity(intentContacts);
+                return (true);
             case R.id.mniAbout:
                 Toast.makeText(this, R.string.about_toast, Toast.LENGTH_LONG)
                         .show();
