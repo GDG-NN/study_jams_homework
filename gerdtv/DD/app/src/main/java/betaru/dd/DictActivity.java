@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -147,6 +148,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
                 txvRusResult.setText(c.getString(c.getColumnIndex("trans")));
                 txvRusResult.setEnabled(true);
 
+                Toast.makeText(this, getResources().getString(R.string.fmsg_word_added), Toast.LENGTH_SHORT).show();
 
                 //Clear Edit + set focus
                 etWord.setText("");
@@ -195,7 +197,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
     private String validateText(String str, String langStr) {
         String errMsg = null;
         // GE Regexp
-        String geStrReg = "^[a-zA-Z ]+$";
+        String geStrReg = "^[a-zA-ZäöüÄÖÜ ]+$";
 
         // RU Regexp
         String ruStrReg = "^[А-яЁё ][-А-яЁё ]+$";
@@ -203,17 +205,14 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
         if (str.length() == 0)
              errMsg = getResources().getString(R.string.emsg_edit_required);
-//        else if (!str.matches(geStrReg) || !str.matches(ruStrReg)) {
-//            errMsg = getResources().getString(R.string.emsg_edit_inv_char);
-//        }
 
         if (langStr == "GE")
             if (!str.matches(geStrReg)) {
-                errMsg = "must be in German!";
+                errMsg = getResources().getString(R.string.emsg_only_ger);
             }
         if (langStr == "RU")
             if (!str.matches(ruStrReg)) {
-                errMsg = "must be in Russian!";
+                errMsg = getResources().getString(R.string.emsg_only_rus);
             }
 
 

@@ -6,6 +6,8 @@
     <string name="txv_word">Word</string>
     <string name="emsg_edit_required"> is required!</string>
     <string name="emsg_edit_inv_char"> contains an invalid character!</string>
+    <string name="emsg_only_ger">must be in German!</string>
+    <string name="emsg_only_rus">must be in Russian!</string>
     <string name="txv_trans">Translation</string>
     <string name="btn_add_word">Add words</string>
     <string name="btn_lesson">Lesson</string>
@@ -14,4 +16,5 @@
     <string name="txv_word_add_counter">0</string>
     <string name="txv_words_studied">Words studied</string>
     <string name="txv_word_std_counter">0%</string>
+    <string name="fmsg_word_added">Word added</string>
 </resources>
