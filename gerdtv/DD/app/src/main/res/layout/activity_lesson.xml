@@ -13,12 +13,10 @@
         android:background="#ffffff">
 
         <TextView
+            style="@style/TxtViewLesson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_margin="15dp"
-            android:textSize="30sp"
-            android:textColor="@color/colorLabel"
             android:text="der Hund"
             android:layout_weight="1"
             android:id="@+id/label_world">
@@ -33,17 +31,11 @@
         </EditText>
 
         <Button
+            style="@style/ButtonStyle"
             android:id="@+id/btnAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorBgdBtn"
-            android:textColor="@color/colorTextBtn"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="sans"
-            android:text="Check">
+            android:text="@string/btn_check">
         </Button>
     </LinearLayout>
 
