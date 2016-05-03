@@ -13,26 +13,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String LOG_TAG = "my_tag";
-//    TextView txvWordAddCount;
-//    DB db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-//        db = new DB(this);
-//        int wordAdd = db.getCountAddedWords();
-
-//        Log.d(LOG_TAG, "words added = " + wordAdd);
-//        txvWordAddCount = (TextView) findViewById(R.id.txv_word_add_counter);
-//        txvWordAddCount.setText(String.valueOf(wordAdd));
-
-
-
-//        db.close();
-
     }
 
     @Override
@@ -44,47 +30,47 @@ public class MainActivity extends AppCompatActivity {
         updateStats();
     }
 
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        Log.wtf(LOG_TAG, "onRestoreInstanceState");
-    }
+//    @Override
+//    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+//        super.onRestoreInstanceState(savedInstanceState);
+//        Log.wtf(LOG_TAG, "onRestoreInstanceState");
+//    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.wtf(LOG_TAG, "onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.wtf(LOG_TAG, "onPause");
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        Log.wtf(LOG_TAG, "onSaveInstanceState");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.wtf(LOG_TAG, "onStop");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.wtf(LOG_TAG, "onRestart");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.wtf(LOG_TAG, "onDestroy");
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        Log.wtf(LOG_TAG, "onResume");
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Log.wtf(LOG_TAG, "onPause");
+//    }
+//
+//    @Override
+//    protected void onSaveInstanceState(Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//        Log.wtf(LOG_TAG, "onSaveInstanceState");
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Log.wtf(LOG_TAG, "onStop");
+//    }
+//
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//        Log.wtf(LOG_TAG, "onRestart");
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        Log.wtf(LOG_TAG, "onDestroy");
+//    }
 
     public void updateStats() {
         TextView txvWordAddCount;
@@ -96,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
 //        Log.d(LOG_TAG, "words added = " + wordAdd);
         txvWordAddCount = (TextView) findViewById(R.id.txv_word_add_counter);
         txvWordAddCount.setText(String.valueOf(wordAdd));
-
         db.close();
     }
 
