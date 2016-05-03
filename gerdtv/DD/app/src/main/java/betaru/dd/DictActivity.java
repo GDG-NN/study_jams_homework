@@ -24,7 +24,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
 
     DB db;
 
-    /** Called when the activity is first created. */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
