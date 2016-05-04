@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="condition_items_array">
+        <item>Key Word</item>
+        <item>Name</item>
+        <item>Nickname</item>
+        <item>Site</item>
+    </string-array>
+    <string-array name="history_items_array">
+        <item>Search History</item>
+        <item>Item</item>
+    </string-array>
+</resources>

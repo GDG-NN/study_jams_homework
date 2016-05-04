@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SearchActivity"
+    android:background="@xml/background">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/history_spinner"
+        android:text="@string/query_history"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        style="@style/listViewItem" />
+
+    <RelativeLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/history_spinner"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/add_condition_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_condition"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentStart="true"
+            style="@style/listViewItem"
+            android:background="@drawable/roundrect_button"/>
+
+        <Button
+            android:id="@+id/find_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/find_button"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentEnd="true"
+            style="@style/listViewItem"
+            android:background="@drawable/roundrect_button"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonPanel"
+        android:background="@drawable/new_condition_search_border"
+        android:layout_marginBottom="10dp">
+
+        <Spinner
+            android:id="@+id/condition_item_spinner_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/listViewItem"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/condition_details_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="@string/condition"
+            android:background="@drawable/roundrect_condition_new"
+            style="@style/listViewItem"
+            android:layout_alignBottom="@+id/condition_item_spinner_new"
+            android:layout_toEndOf="@+id/condition_item_spinner_new"
+            android:layout_alignParentTop="true"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/delete_item_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_notification_clear_all"
+            android:layout_alignBottom="@+id/condition_item_spinner_new"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/condition_list_view"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/new_search_layout"
+        android:layout_alignParentBottom="true"
+        android:descendantFocusability="beforeDescendants" />
+
+</RelativeLayout>

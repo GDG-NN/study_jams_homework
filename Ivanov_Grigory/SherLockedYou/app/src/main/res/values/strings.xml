@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SherLockedYou</string>
+    <string name="query_history">Query History</string>
+    <string name="add_condition">+ add condition</string>
+    <string name="condition">Condition</string>
+    <string name="find_button">find</string>
+    <string name="new_search">New Search</string>
+    <string name="title_activity_search_results">SherlockedYou</string>
+</resources>
