@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ToDo</string>
+
+
+    <string name="current_task">Текущие</string>
+    <string name="done_task">Завершенные</string>
+
+   <string name="dialog_editing_title">Редактирование задачи</string>
+    <string name="dialog_title">Добавление задачи</string>
+    <string name="task_title">Название</string>
+    <string name="task_date">Дата</string>
+    <string name="task_time">Время</string>
+
+    <string name="OK">OK</string>
+    <string name="Cancel">Отмена</string>
+    <string name="dialog_error_empty_title">Пожалуйся, введите название</string>
+
+    <string name="dialog_removing_message">Вы уверенны, что хотите удалить эту задачу</string>
+    <string name="removed">Удалена</string>
+    <string name="separator_overdue">Просроченные</string>
+    <string name="separator_today">Сегодня</string>
+    <string name="separator_tomorrow">Завтра</string>
+    <string name="separator_future">Будущие</string>
+
+</resources>
