@@ -142,7 +142,7 @@ public class DictActivity extends AppCompatActivity implements View.OnClickListe
     private String validateText(String str, String langStr) {
         String errMsg = null;
         // GE Regexp
-        String geStrReg = "^[a-zA-ZäöüÄÖÜ ]+$";
+        String geStrReg = "^[a-zA-ZäöüÄÖÜß ]+$";
 
         // RU Regexp
         String ruStrReg = "^[А-яЁё ][-А-яЁё ]+$";
