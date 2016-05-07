@@ -71,7 +71,6 @@ public class DB {
             }
         }
 
-
         cur.close();
 
         return result;
