@@ -79,15 +79,17 @@ public class MainActivity extends AppCompatActivity {
         db = new DB(this);
         int wordAdd = db.getCountAddedWords();
         int wordLear = db.getCountLearWords();
-        String[] test = db.getCheckWord();
 
 //         Add stats
         txvWordAddCount = (TextView) findViewById(R.id.txv_word_add_counter);
         txvWordAddCount.setText(String.valueOf(wordAdd));
 //        Lear stats
-        wordLear = (wordLear/wordAdd) * 100;
+        if (wordAdd != 0) {
+            wordLear = (wordLear/wordAdd) * 100;
+        }
+
         txvWordLearCount = (TextView) findViewById(R.id.txv_word_std_counter);
-        txvWordLearCount.setText(String.valueOf(wordLear) + "%");
+        txvWordLearCount.setText(String.valueOf(wordLear));
 
         db.close();
     }
