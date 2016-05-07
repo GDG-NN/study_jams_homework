@@ -14,7 +14,7 @@ public class DB {
     private static final String LOG_TAG = "my_tag";
     DBHelper dbHelper;
     Context context;
-    Cursor cursor;
+    Cursor cur;
     SQLiteDatabase db;
 
     public DB(Context context) {
@@ -28,12 +28,74 @@ public class DB {
 
         db = dbHelper.getReadableDatabase();
 
-        cursor = db.query(DBHelper.TABLE_NAME, null, null, null, null, null, null);
-        int cnt = cursor.getCount();
+        cur = db.query(DBHelper.TABLE_NAME, null, null, null, null, null, null);
+        int cnt = cur.getCount();
 
-        Log.d(LOG_TAG, "count add: " + cnt);
+        Log.d(LOG_TAG, String.format("count add: %s", cnt));
 
-        cursor.close();
+        cur.close();
+
+        return cnt;
+    }
+    // Get random word for checking
+    public String[] getCheckWord() {
+
+        String[] result = new String[0];
+//      select  _id, word, trans from my_dict
+//      where date_check <= datetime('now', '-1 minute')
+//      ORDER BY RANDOM() LIMIT 1;
+        String sqlQuery = "select ?, word, trans from my_dict where date_check <= datetime('now', '-1 minute') ORDER BY RANDOM() LIMIT 1";
+        String idCol = DBHelper.KEY_ID;
+        String wordCol = DBHelper.KEY_WORD;
+        String transCol = DBHelper.KEY_TRANS;
+        String tableName = DBHelper.TABLE_NAME;
+        String dateCheckCol = DBHelper.KEY_DATE_CHECK;
+
+        cur = db.rawQuery(sqlQuery, new String[]{"_id"});
+
+        Log.d(LOG_TAG, String.format("cur: %s", cur));
+
+        if (cur != null) {
+            if (cur.moveToFirst()) {
+                int idColInd = cur.getColumnIndex(idCol);
+                int id = cur.getInt(idColInd);
+                int wordColInd = cur.getColumnIndex(wordCol);
+                String word = cur.getString(wordColInd);
+                int transColInd = cur.getColumnIndex(transCol);
+                String trans = cur.getString(transColInd);
+
+                Log.d(LOG_TAG, String.format("id: %s, word: %s, trans: %s", id, word, trans));
+            }
+        }
+
+
+        cur.close();
+
+        return result;
+    }
+    // Get counter learned words
+    public int getCountLearWords() {
+        db = dbHelper.getReadableDatabase();
+
+        String selectCase = DBHelper.KEY_COUNTER + " > ?";
+        String[] selectColmn = new String[] { "COUNT("+ DBHelper.KEY_ID +") AS c_all" };
+        String[] selectArg = new String[] {"1"};
+        int cnt = 0;
+
+
+        cur = db.query(DBHelper.TABLE_NAME, selectColmn,
+                selectCase, selectArg, null, null, null);
+
+        if (cur != null) {
+            if (cur.moveToFirst()) {
+                int countColIndex = cur.getColumnIndex("c_all");
+                cnt = cur.getInt(countColIndex);
+            }
+        }
+
+        Log.d(LOG_TAG, String.format("count lear: %s", cnt));
+
+        cur.close();
 
         return cnt;
     }
@@ -46,7 +108,7 @@ public class DB {
 
         // Insert and get rowID
         long rowID = db.insert(DBHelper.TABLE_NAME, null, cv);
-        Log.d(LOG_TAG, "row inserted, " + word + ", " + trans + " ID = " + rowID);
+        Log.d(LOG_TAG, String.format("row inserted: %s, %s, rowID = %s", word, trans, rowID));
 
         return rowID;
     }
