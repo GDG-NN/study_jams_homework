@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         int wordAdd = db.getCountAddedWords();
         int wordLear = db.getCountLearWords();
 
+
 //         Add stats
         txvWordAddCount = (TextView) findViewById(R.id.txv_word_add_counter);
         txvWordAddCount.setText(String.valueOf(wordAdd));

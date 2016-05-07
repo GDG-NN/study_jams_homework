@@ -40,7 +40,7 @@ public class DB {
     // Get random word for checking
     public String[] getCheckWord() {
 
-        String[] result = null;
+        String[] result = new String[0];
 //      select  _id, word, trans from my_dict
 //      where date_check <= datetime('now', '-1 minute')
 //      ORDER BY RANDOM() LIMIT 1;
@@ -49,7 +49,9 @@ public class DB {
         String transCol = DBHelper.KEY_TRANS;
         String tableName = DBHelper.TABLE_NAME;
         String dateCheckCol = DBHelper.KEY_DATE_CHECK;
-        String sqlQuery = "select " + idCol + ", " + wordCol + ", " + transCol + " from " + tableName + " where " + dateCheckCol + " <= datetime('now', '-1 minute') ORDER BY RANDOM() LIMIT 1";
+        String sqlQuery = "select " + idCol + ", " + wordCol + ", " + transCol + " from "
+                + tableName + " where " + dateCheckCol
+                + " <= datetime('now', '-1 minute') ORDER BY RANDOM() LIMIT 1";
 
         cur = db.rawQuery(sqlQuery, null);
 
@@ -64,7 +66,7 @@ public class DB {
                 int transColInd = cur.getColumnIndex(transCol);
                 String trans = cur.getString(transColInd);
 
-                result = new String[]{String.valueOf(id), word, trans};
+                result = new String[] {String.valueOf(id), word, trans};
                 Log.d(LOG_TAG, String.format("id: %s, word: %s, trans: %s", id, word, trans));
             }
         }
