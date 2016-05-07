@@ -44,18 +44,19 @@ public class DB {
 //      select  _id, word, trans from my_dict
 //      where date_check <= datetime('now', '-1 minute')
 //      ORDER BY RANDOM() LIMIT 1;
+
         String idCol = DBHelper.KEY_ID;
         String wordCol = DBHelper.KEY_WORD;
         String transCol = DBHelper.KEY_TRANS;
         String tableName = DBHelper.TABLE_NAME;
         String dateCheckCol = DBHelper.KEY_DATE_CHECK;
-        String sqlQuery = "select " + idCol + ", " + wordCol + ", " + transCol + " from "
-                + tableName + " where " + dateCheckCol
-                + " <= datetime('now', '-1 minute') ORDER BY RANDOM() LIMIT 1";
+
+        String sqlQuery = "select "+ idCol +", "+ wordCol +", "+ transCol +" from "+ tableName
+                +" where "+ dateCheckCol +" <= datetime('now', '-1 minute') ORDER BY RANDOM() LIMIT 1";
 
         cur = db.rawQuery(sqlQuery, null);
 
-
+        Log.d(LOG_TAG, String.format("cur: %s", cur));
 
         if (cur != null) {
             if (cur.moveToFirst()) {
@@ -66,12 +67,13 @@ public class DB {
                 int transColInd = cur.getColumnIndex(transCol);
                 String trans = cur.getString(transColInd);
 
-                result = new String[] {String.valueOf(id), word, trans};
                 Log.d(LOG_TAG, String.format("id: %s, word: %s, trans: %s", id, word, trans));
             }
         }
 
+
         cur.close();
+
         return result;
     }
     // Get counter learned words
@@ -106,7 +108,6 @@ public class DB {
         ContentValues cv = new ContentValues();
         cv.put(DBHelper.KEY_WORD, word);
         cv.put(DBHelper.KEY_TRANS, trans);
-        cv.put(DBHelper.KEY_DATE_CHECK, 0);
 
         // Insert and get rowID
         long rowID = db.insert(DBHelper.TABLE_NAME, null, cv);
