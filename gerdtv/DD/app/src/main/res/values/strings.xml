@@ -8,6 +8,8 @@
     <string name="emsg_edit_inv_char"> contains an invalid character!</string>
     <string name="emsg_only_ger">must be in German!</string>
     <string name="emsg_only_rus">must be in Russian!</string>
+    <string name="emsg_check_wrong">wrong!</string>
+    <string name="tmsg_check_true">right!</string>
     <string name="txv_trans">Translation</string>
     <string name="btn_add_word">Add words</string>
     <string name="btn_lesson">Lesson</string>

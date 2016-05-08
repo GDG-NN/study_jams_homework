@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         db = new DB(this);
         int wordAdd = db.getCountAddedWords();
         int wordLear = db.getCountLearWords();
+//        String[] data = db.getCheckWord();
 
 
 //         Add stats
@@ -100,8 +101,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openLes(View v) {
+    public void openLesson(View v) {
         Intent intent = new Intent(this, LessonActivity.class);
         startActivity(intent);
     }
+
 }

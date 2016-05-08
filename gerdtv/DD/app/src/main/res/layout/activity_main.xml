@@ -79,7 +79,7 @@
             android:text="@string/btn_lesson"
             android:id="@+id/stdWordsButton"
             android:layout_gravity="center"
-            android:onClick="openLes" />
+            android:onClick="openLesson"/>
     </LinearLayout>
 
 </RelativeLayout>

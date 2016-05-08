@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="betaru.dd.LessonActivity"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
     android:background="#B6B6B6">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff">
+        android:background="#FFFFFF">
 
         <TextView
             style="@style/TxtViewLesson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="der Hund"
-            android:layout_weight="1"
+            android:text="Ololol"
             android:id="@+id/txv_word_req">
         </TextView>
 
         <EditText
-            android:id="@+id/etWord"
+            android:id="@+id/etWordChk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             >
         </EditText>
 
-        <Button
-            style="@style/ButtonStyle"
-            android:id="@+id/btnCheck"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_check">
-        </Button>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF">
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/btnChk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_check"
+            android:onClick="onClick">
+        </Button>
+
     </LinearLayout>
-</RelativeLayout>
+
+</LinearLayout>
