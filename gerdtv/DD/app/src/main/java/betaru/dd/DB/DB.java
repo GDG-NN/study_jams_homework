@@ -137,7 +137,7 @@ public class DB {
 //        update my_dict set counter = counter + 1, date_check = datetime() where _id = 1;
 
         String sqlQuery = "update "+ tableName +" set "+ counterCol +" = "+ counterCol +" + 1, "+
-                dateCheckCol +" = datetime() where "+ idCol +" = 1;";
+                dateCheckCol +" = datetime() where "+ idCol +" = " + id;
 
         cur = db.rawQuery(sqlQuery, null);
 

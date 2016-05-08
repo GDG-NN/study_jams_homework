@@ -39,7 +39,7 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
     public void prepareLesson() {
 
 
-        String[] data = db.getCheckWord();
+        data = db.getCheckWord();
 
         chId = Integer.valueOf(data[0]);
         chWord = data[1];
