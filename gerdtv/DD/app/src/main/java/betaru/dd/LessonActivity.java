@@ -14,7 +14,9 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
 
     final String LOG_TAG = "myLogs";
     String[] data;
-    String chId, chWord, chTrans;
+    Integer chId;
+    String chWord;
+    String chTrans;
 
     TextView txvWordReq;
     EditText etCheckRes;
@@ -36,9 +38,10 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
 
     public void prepareLesson() {
 
-        data = db.getCheckWord();
 
-        chId = data[0];
+        String[] data = db.getCheckWord();
+
+        chId = Integer.valueOf(data[0]);
         chWord = data[1];
         chTrans = data[2];
 
@@ -53,6 +56,7 @@ public class LessonActivity extends AppCompatActivity implements View.OnClickLis
         String word = etCheckRes.getText().toString();
 
         if (word.equals(chTrans)) {
+            db.upCounterWord(chId);
             Toast.makeText(this, getResources().getString(R.string.tmsg_check_true), Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, getResources().getString(R.string.emsg_check_wrong), Toast.LENGTH_LONG).show();

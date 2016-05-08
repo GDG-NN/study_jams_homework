@@ -113,6 +113,7 @@ public class DB {
         cv.put(DBHelper.KEY_WORD, word);
         cv.put(DBHelper.KEY_TRANS, trans);
         cv.put(DBHelper.KEY_DATE_CHECK, 0);
+        cv.put(DBHelper.KEY_COUNTER, 0);
 
         // Insert and get rowID
         long rowID = db.insert(DBHelper.TABLE_NAME, null, cv);
@@ -120,6 +121,34 @@ public class DB {
 
         return rowID;
     }
+
+    public int upCounterWord(int id) {
+        int result = 0;
+
+        db = dbHelper.getWritableDatabase();
+
+        String idCol = DBHelper.KEY_ID;
+        String counterCol = DBHelper.KEY_COUNTER;
+        String tableName = DBHelper.TABLE_NAME;
+        String dateCheckCol = DBHelper.KEY_DATE_CHECK;
+
+
+
+//        update my_dict set counter = counter + 1, date_check = datetime() where _id = 1;
+
+        String sqlQuery = "update "+ tableName +" set "+ counterCol +" = "+ counterCol +" + 1, "+
+                dateCheckCol +" = datetime() where "+ idCol +" = 1;";
+
+        cur = db.rawQuery(sqlQuery, null);
+
+        cur.moveToFirst();
+
+        cur.close();
+
+        return result;
+
+    }
+
 
     public void deleteWord(int id) {
         db = dbHelper.getWritableDatabase();
