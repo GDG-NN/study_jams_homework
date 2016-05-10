@@ -41,7 +41,8 @@ public class DB {
     public String[] getCheckWord() {
 
 
-        String[] result = new String[0];
+        String[] result = null;
+
 //      select  _id, word, trans from my_dict
 //      where date_check <= datetime('now', '-1 minute')
 //      ORDER BY RANDOM() LIMIT 1;
@@ -78,15 +79,16 @@ public class DB {
 
         cur.close();
 
-        return result;
+//        return result;
+        return null;
     }
     // Get counter learned words
     public int getCountLearWords() {
         db = dbHelper.getReadableDatabase();
 
-        String selectCase = DBHelper.KEY_COUNTER + " > ?";
+        String selectCase = DBHelper.KEY_COUNTER + " >= ?";
         String[] selectColmn = new String[] { "COUNT("+ DBHelper.KEY_ID +") AS c_all" };
-        String[] selectArg = new String[] {"1"};
+        String[] selectArg = new String[] {"10"};
         int cnt = 0;
 
 
