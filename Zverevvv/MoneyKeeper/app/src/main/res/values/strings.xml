@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Money Keeper</string>
+    <string name="payment_name_hint">Enter a name for the payment</string>
+    <string name="payment_name_label">Name</string>
+    <string name="payment_details_label">Details</string>
+    <string name="payment_sum_hint">Enter a sum for the payment</string>
+    <string name="data_picker_title">Date of payment:</string>
+    <string name="new_payment">New payment</string>
+</resources>
