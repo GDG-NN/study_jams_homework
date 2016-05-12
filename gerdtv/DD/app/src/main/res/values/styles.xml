@@ -8,4 +8,38 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextBtn</item>
+        <item name="android:background">@color/colorBgdBtn</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="TxtViewMain">
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TxtViewDict">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/colorLabel</item>
+    </style>
+
+    <style name="TxtViewArticle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/colorLabel</item>
+    </style>
+
+    <style name="TxtViewLesson">
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorLabel</item>
+    </style>
 </resources>

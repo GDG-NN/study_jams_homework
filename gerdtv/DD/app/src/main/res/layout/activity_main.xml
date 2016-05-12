@@ -19,48 +19,40 @@
         android:background="#ffffff">
 
         <TextView
+            style="@style/TxtViewMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="35sp"
-            android:layout_margin="5dp"
             android:text="@string/txv_words_added"
             android:id="@+id/txv_words_added"
-            android:textStyle="bold"
-            android:textColor="#388E3C" />
+            android:textColor="@color/colorTxViewAdd" />
 
         <TextView
+            style="@style/TxtViewMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="35sp"
-            android:textColor="#388E3C"
-            android:layout_margin="5dp"
+            android:textColor="@color/colorTxViewAdd"
             android:text="@string/txv_word_add_counter"
-            android:id="@+id/txv_word_add_counter"
-            android:textStyle="bold" />
+            android:id="@+id/txv_word_add_counter" />
 
         <TextView
+            style="@style/TxtViewMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="35sp"
-            android:textColor="#F44336"
-            android:layout_margin="5dp"
+            android:textColor="@color/colorTxViewStd"
             android:text="@string/txv_words_studied"
-            android:id="@+id/txv_words_studied"
-            android:textStyle="bold" />
+            android:id="@+id/txv_words_studied" />
 
         <TextView
+            style="@style/TxtViewMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="35sp"
-            android:textColor="#F44336"
-            android:layout_margin="5dp"
+            android:textColor="@color/colorTxViewStd"
             android:text="@string/txv_word_std_counter"
-            android:id="@+id/txv_word_std_counter"
-            android:textStyle="bold" />
+            android:id="@+id/txv_word_std_counter" />
 
     </LinearLayout>
 
@@ -73,33 +65,21 @@
         android:background="#ffffff">
 
         <Button
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_add_word"
             android:id="@+id/addWordsButton"
-            android:textColor="@color/colorTextBtn"
-            android:background="@color/colorBgdBtn"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:onClick="openDict"
-            android:textStyle="bold"
-            android:typeface="sans" />
+            android:onClick="openDict" />
         <Button
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_lesson"
             android:id="@+id/stdWordsButton"
-            android:textColor="@color/colorTextBtn"
-            android:background="@color/colorBgdBtn"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:onClick="openLes"
-            android:textStyle="bold"
-            android:typeface="sans" />
+            android:onClick="openLesson"/>
     </LinearLayout>
 
 </RelativeLayout>

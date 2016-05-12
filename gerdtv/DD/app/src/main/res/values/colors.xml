@@ -9,4 +9,6 @@
     <color name="colorArticleDer">#1f2cde</color>
     <color name="colorArticleDie">#ff1100</color>
     <color name="colorArticleDas">#44be20</color>
+    <color name="colorTxViewAdd">#388E3C</color>
+    <color name="colorTxViewStd">#F44336</color>
 </resources>
